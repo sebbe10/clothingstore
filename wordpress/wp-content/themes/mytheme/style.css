@@ -1,0 +1,23 @@
+/* Phone media screen */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.theFooter {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-color: lightgray;
+  color: black;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Smart Tablet */
+
+/* Computer */
