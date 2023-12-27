@@ -7,8 +7,6 @@
 .theFooter {
   display: flex;
   flex-direction: row;
-  position: absolute;
-  bottom: 0;
   height: 100px;
   width: 100%;
   background-color: lightgray;
@@ -19,5 +17,11 @@
 }
 
 /* Smart Tablet */
+@media screen and (min-width: 768px) {
+}
+/*  */
 
 /* Computer */
+@media screen and (min-width: 1200px) {
+}
+/*  */
