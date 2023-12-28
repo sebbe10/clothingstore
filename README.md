@@ -1,4 +1,4 @@
 ﻿# clothingstore
- Använder: MAMP
+ Använder: MAMP.
  Php version: 8.0.1
-http://localhost/clothingstore/wordpress/
+ http://localhost/clothingstore/wordpress/
