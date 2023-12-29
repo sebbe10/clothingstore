@@ -121,6 +121,13 @@ Hamburger menyns sträng knapp
   top: 0;
 }
 
+.woocommerce-product-search {
+  display: flex;
+}
+#woocommerce-product-search-field-1 {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
 /*  */
 
 /* Själva innehållets design till hamburger menyn och gjort en egen category*/
