@@ -15,8 +15,6 @@
     if (have_posts()) :
         while (have_posts()) : the_post();
             the_content();
-            // the_category();
-            wp_list_categories();
         endwhile;
     endif;
     ?>
