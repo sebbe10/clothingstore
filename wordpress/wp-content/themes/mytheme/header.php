@@ -25,7 +25,8 @@
 
         <div class="theComputerNav">
             <?php
-            wp_nav_menu()
+            wp_nav_menu();
+            get_search_form();
             ?>
             <!-- <p class="theBtnForCategory2" onclick="openCategory2()">Kategory</p> -->
             <!-- <div class="theCategoryDiv2"> -->
@@ -43,7 +44,10 @@
 
         <div class="theHamburgerMenu">
             <i onclick="theClose()" class="fa-solid fa-x"></i>
-            <?php wp_nav_menu() ?>
+            <?php wp_nav_menu();
+            get_search_form();
+            ?>
+
             <!-- <p class="theBtnForCategory" onclick="openCategory()">Kategory</p> -->
             <!-- <div class="theCategoryDiv"> -->
             <!-- <p class="theCategoryUL"> -->
