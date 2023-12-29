@@ -321,12 +321,86 @@ Hamburger menyns sträng knapp
 
 /*  */
 
-/* Seacrh.php */
+/* Search.php */
+
+.theStyleSearch {
+  display: flex;
+  justify-content: center;
+}
+
+.allSearch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.eachSearchProduct {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.eachSearchProduct:hover {
+  background-color: whitesmoke;
+}
+
+.theH2Search {
+  font-size: 15px;
+}
+.theEachButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.558);
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: none;
+}
+
+.theEachButton:hover {
+  background-color: black;
+}
+
+.theEachA {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
 
 .thePostImg .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
   width: 250px !important;
   height: 250px !important;
 }
+/*  */
+
+/* Product search */
+/* .woocommerce-product-search { */
+/* display: flex; */
+/* flex-direction: row; */
+/* } */
+
+/* .search-field { */
+/* width: 100%; */
+/* padding-bottom: 5px; */
+/* padding-top: 5px; */
+/* font-size: 20px; */
+/* font-family: Arial; */
+/* } */
+
+/* .woocommerce-product-search button { */
+/* width: 20%; */
+/* } */
+
 /*  */
 
 /* Smart Tablet */
@@ -588,10 +662,60 @@ Hamburger menyns sträng knapp
     align-items: center;
     margin-top: 100px;
   }
+
+  /* Product search */
+  .woocommerce-product-search {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .search-field {
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 20px;
+    font-family: Arial;
+  }
+
+  .woocommerce-product-search button {
+    width: 20%;
+  }
+
+  /*  */
 }
+
 /*  */
 
 /* Computer */
 @media screen and (min-width: 1200px) {
+  .theComputerNav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  /* Product search */
+
+  .theComputerNav .woocommerce-product-search {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+  }
+
+  .theComputerNav .search-field {
+    width: 100%;
+
+    font-size: 20px;
+    font-family: Arial;
+  }
+
+  .theComputerNav .woocommerce-product-search button {
+    width: 30%;
+  }
+
+  /*  */
 }
 /*  */

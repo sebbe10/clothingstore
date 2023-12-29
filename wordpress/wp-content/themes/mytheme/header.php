@@ -21,12 +21,17 @@
             </a>
         </h1>
 
+
+
         <i onclick="theOpenMenu()" class="fa-solid fa-bars"></i>
 
         <div class="theComputerNav">
             <?php
+            get_product_search_form();
+            ?>
+
+            <?php
             wp_nav_menu();
-            get_search_form();
             ?>
             <!-- <p class="theBtnForCategory2" onclick="openCategory2()">Kategory</p> -->
             <!-- <div class="theCategoryDiv2"> -->
@@ -44,8 +49,9 @@
 
         <div class="theHamburgerMenu">
             <i onclick="theClose()" class="fa-solid fa-x"></i>
-            <?php wp_nav_menu();
-            get_search_form();
+            <?php
+            wp_nav_menu();
+            get_product_search_form()
             ?>
 
             <!-- <p class="theBtnForCategory" onclick="openCategory()">Kategory</p> -->
@@ -67,16 +73,16 @@
 
         function theClose() {
             document.querySelector('.theHamburgerMenu').classList.remove('youOpen')
-            document.querySelector('.theCategoryDiv').classList.remove('openCategory')
+            // document.querySelector('.theCategoryDiv').classList.remove('openCategory')
 
         }
 
 
-        function openCategory() {
-            document.querySelector('.theCategoryDiv').classList.toggle('openCategory')
-        }
+        // function openCategory() {
+        //     document.querySelector('.theCategoryDiv').classList.toggle('openCategory')
+        // }
 
-        function openCategory2() {
-            document.querySelector('.theCategoryDiv2').classList.toggle('openCategory2')
-        }
+        // function openCategory2() {
+        //     document.querySelector('.theCategoryDiv2').classList.toggle('openCategory2')
+        // }
     </script>
