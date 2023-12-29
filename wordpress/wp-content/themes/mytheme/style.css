@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+/* Startsida butik */
+/*  */
 .theHeader {
   height: 100px;
   background-color: whitesmoke;
@@ -29,16 +31,21 @@
 
 /* Startsidans huvud bild */
 
-.backgroundStyleForImg {
-  border: 1px solid black;
+.wp-image-111 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 350px;
+  /* border: 1px solid black; */
 }
 
 .theStartImg {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 90%;
-  height: 350px;
+  width: 100%;
+  height: auto;
 }
 
 /*  */
@@ -48,7 +55,7 @@
   right: 0;
   font-size: 40px;
   cursor: pointer;
-  position: absolute !important;
+  position: fixed !important;
   top: 60px;
 }
 
@@ -69,6 +76,10 @@ Hamburger menyns sträng knapp
 /*  */
 
 /* Själva innehållets design till hamburger menyn */
+
+.theComputerNav {
+  display: none;
+}
 
 .theHamburgerMenu {
   position: fixed;
@@ -100,11 +111,60 @@ Hamburger menyns sträng knapp
   list-style: none;
 }
 
+.theHamburgerMenu li:hover {
+  background-color: whitesmoke;
+}
+
 .theHamburgerMenu.youOpen {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 0;
 }
+
+/*  */
+
+/* Själva innehållets design till hamburger menyn och gjort en egen category*/
+
+/* .theBtnForCategory {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.theBtnForCategory:hover {
+  background-color: whitesmoke;
+}
+
+.theCategoryDiv {
+  text-align: center;
+  position: fixed;
+  right: -500px;
+} */
+
+/* .theCategoryDiv.openCategory { */
+/* .theCategoryDiv.openCategory {
+  position: fixed;
+  right: 0;
+  width: auto;
+  height: 100vh;
+  background-color: white;
+}
+
+.theLI {
+  margin-top: 15px;
+}
+
+.theA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 18px;
+}
+.theCategoryDiv .theLI:hover {
+  background-color: whitesmoke;
+} */
 
 /*  */
 
@@ -125,9 +185,8 @@ Hamburger menyns sträng knapp
   justify-content: center !important;
   align-items: center !important;
   text-align: center !important;
-  width: 250px !important;
-  height: auto !important;
-  /* border: 1px solid black; */
+  width: 300px !important;
+  height: 400px !important;
   border-radius: 5px;
   padding-left: 10px !important;
   padding-right: 10px !important;
@@ -145,9 +204,20 @@ Hamburger menyns sträng knapp
   height: 250px !important;
 }
 
+.product img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  display: flex !important;
+  margin: auto !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 250px !important;
+  height: 250px !important;
+}
+
 .products .product h2 {
   color: black;
   font-family: Arial;
+  font-size: 15px !important;
 }
 
 .products .product .price {
@@ -167,6 +237,44 @@ Hamburger menyns sträng knapp
 
 /*  */
 
+/* Sortering*/
+
+.woocommerce-ordering {
+  width: 100%;
+  text-align: center;
+}
+
+.woocommerce-ordering .orderby {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  border-radius: 5px;
+  background: whitesmoke;
+  color: black;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.woocommerce .woocommerce-result-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 100;
+  font-family: Arial;
+  float: none !important;
+}
+
+/*  */
+
 /* Footern där information finns om hur man kontaktar */
 .theFooter {
   display: flex;
@@ -181,8 +289,297 @@ Hamburger menyns sträng knapp
   margin-top: 100px;
 }
 
+/* Category sidan */
+
+.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  margin-top: 50px;
+  border-radius: 5px;
+  width: auto;
+  height: 100px;
+  list-style: none;
+}
+
+.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 a {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/*  */
+
 /* Smart Tablet */
 @media screen and (min-width: 768px) {
+  /* Startsida butik */
+  /*  */
+  .theHeader {
+    height: 100px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  /* Sidans namn */
+  .theHeadName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+  }
+
+  .theHeadName a {
+    color: black;
+    text-decoration: none;
+  }
+  /*  */
+
+  /* Nav med alla länkar till sidorna */
+
+  .theComputerNav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .theComputerNav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .theComputerNav li {
+    font-size: 22px;
+    list-style: none;
+  }
+
+  .theComputerNav a {
+    color: black;
+    text-decoration: none;
+  }
+
+  /*  */
+
+  /* Startsidans huvud bild */
+
+  .wp-image-111 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 350px;
+    /* border: 1px solid black; */
+  }
+
+  .theStartImg {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  /*  */
+
+  /* Hamburgeermeny knappen */
+  .fa-solid.fa-bars {
+    display: none;
+  }
+
+  /*  */
+  /* 
+Hamburger menyns sträng knapp
+ */
+
+  .fa-solid.fa-x {
+    color: darkred;
+    top: 60px;
+    position: absolute;
+    right: 0;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  /*  */
+
+  /* Själva innehållets design till hamburger menyn och gjort en egen category*/
+
+  /* .theBtnForCategory2 {
+    position: absolute;
+    right: 30px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .theBtnForCategory2:hover {
+    color: darkblue;
+  }
+
+  .theCategoryDiv2 {
+    text-align: center;
+    position: fixed;
+    top: -500px;
+  } */
+
+  /* .theCategoryDiv.openCategory { */
+  /* .theCategoryDiv2.openCategory2 {
+    position: fixed;
+    right: 30px;
+    top: 90px;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+  }
+
+  .theLI {
+    margin-top: 15px;
+  }
+
+  .theA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18px;
+  }
+  .theCategoryDiv .theLI:hover {
+    background-color: whitesmoke;
+  } */
+
+  /*  */
+
+  /* Styling till produkterna */
+
+  .products.columns-4 {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .products .product {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 250px !important;
+    height: 400px !important;
+    border-radius: 5px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    /* margin-top: 70px !important; */
+  }
+
+  .products .product:hover {
+    background-color: whitesmoke;
+  }
+
+  img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    width: 250px !important;
+    height: 300px !important;
+  }
+
+  .products .product img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .products .product h2 {
+    color: black;
+    font-family: Arial;
+    font-size: 5px;
+  }
+
+  .products .product .price {
+    color: black;
+    font-size: 18px !important;
+  }
+
+  .products .product a.button {
+    background-color: black;
+    color: white;
+  }
+
+  .products .product a.button:hover {
+    background-color: rgba(0, 0, 0, 0.558);
+    color: white;
+  }
+
+  /*  */
+
+  /* Sortering*/
+
+  .woocommerce-ordering {
+    width: 100%;
+    text-align: center;
+  }
+
+  .woocommerce-ordering .orderby {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: black;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .woocommerce .woocommerce-result-count {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 100;
+    font-family: Arial;
+    float: none !important;
+  }
+
+  /*  */
+
+  /* Footern där information finns om hur man kontaktar */
+  .theFooter {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+  }
 }
 /*  */
 
