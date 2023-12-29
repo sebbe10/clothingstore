@@ -365,6 +365,7 @@ Hamburger menyns sträng knapp
   padding-top: 2px;
   padding-bottom: 2px;
   border: none;
+  margin: auto;
 }
 
 .theEachButton:hover {
