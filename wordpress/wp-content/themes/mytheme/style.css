@@ -326,6 +326,56 @@ Hamburger menyns sträng knapp
   text-decoration: none;
 }
 
+.theAllCategoryInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.eachCategoryInfo {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.eachCategoryInfo img {
+  width: 250px !important;
+  height: 250px !important;
+}
+
+.thecategorybutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #717171 !important;
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: none;
+}
+
+.eachCategoryInfo a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.theaforcategory {
+  font-size: 20px;
+}
+
 /*  */
 
 /* Search.php */
@@ -410,6 +460,48 @@ Hamburger menyns sträng knapp
 /* } */
 
 /*  */
+
+/* Paypal design */
+
+/*  */
+
+/* Account meny for users */
+/* .theAccountMeny {
+  position: fixed;
+  right: -1500px;
+} */
+/*  */
+
+.thePhoneAccountMeny {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: fixed !important ;
+  left: -500px !important;
+  top: 100px;
+  background-color: darkgray;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.thePhoneAccountMeny.openPhoneMenu {
+  position: fixed !important;
+  left: 60px !important;
+}
+
+.thePhoneAccountMeny.openPhoneMenu li {
+  list-style: none;
+}
+
+.thePhoneAccountMeny.openPhoneMenu a {
+  text-decoration: none;
+  color: white;
+}
+
+/* .theAccountMeny #menu-meny2-1.menu {
+  display: flex !important;
+  flex-direction: column !important;
+} */
 
 /* Smart Tablet */
 @media screen and (min-width: 768px) {
@@ -572,7 +664,7 @@ Hamburger menyns sträng knapp
     justify-content: center !important;
     align-items: center !important;
     text-align: center !important;
-    width: 250px !important;
+    width: 300px !important;
     height: 400px !important;
     border-radius: 5px;
     padding-left: 10px !important;
@@ -690,9 +782,30 @@ Hamburger menyns sträng knapp
   }
 
   /*  */
-}
 
-/*  */
+  /* Footern där information finns om hur man kontaktar */
+  .theFooter {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+  }
+  /*  */
+
+  /* Paypal design */
+
+  /*  */
+
+  /* Account meny for users */
+
+  /*  */
+}
 
 /* Computer */
 @media screen and (min-width: 1200px) {
@@ -725,5 +838,65 @@ Hamburger menyns sträng knapp
   }
 
   /*  */
+
+  /* Produkter */
+  .products .product {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 300px !important;
+    height: 400px !important;
+    border-radius: 5px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    /* margin-top: 70px !important; */
+  }
+  /* Footern där information finns om hur man kontaktar */
+  .theFooter {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  /* Footern där information finns om hur man kontaktar */
+  .theFooter {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+  }
+  /*  */
+
+  /* Paypal design */
+
+  /*  */
+
+  /* Account meny for users */
+  .theAccountMeny {
+    position: fixed;
+    left: -500px;
+  }
+
+  .theAccountMeny.openMenu {
+    position: fixed;
+    left: 0;
+  }
+  /*  */
 }
-/*  */

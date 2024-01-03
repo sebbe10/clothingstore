@@ -8,12 +8,19 @@
 </head>
 
 <body>
+    <?php
+    get_header() ?>
 
-    <?php get_header() ?>
+    <marquee behavior="" direction="" left>
+        <h3>Produkt släpp</h3>
+    </marquee>
 
     <h1>Produkt släpp</h1>
 
+
+
     <?php get_footer() ?>
+
 
 
 </body>

@@ -21,8 +21,6 @@
             </a>
         </h1>
 
-
-
         <i onclick="theOpenMenu()" class="fa-solid fa-bars"></i>
 
         <div class="theComputerNav">
@@ -30,9 +28,31 @@
             get_product_search_form();
             ?>
 
+            <!-- Account menu -->
+            <i onclick="openAccountMenu()" class="fa-solid fa-user"></i>
+            <div class="theAccountMeny">
+                <?php
+                if (get_the_title() !== 'Login' && get_the_title() !== 'Mitt Konto' && get_the_title() !== 'User' && get_the_title() !== 'Members' && get_the_title() !== 'Logout') {
+                ?>
+                    <div class="theUndersidaMenu">
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'page-menu'
+                        ));
+                        ?>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
+            <!--  -->
+
             <?php
             wp_nav_menu();
             ?>
+
+
+
             <!-- <p class="theBtnForCategory2" onclick="openCategory2()">Kategory</p> -->
             <!-- <div class="theCategoryDiv2"> -->
             <!-- <p class="theCategoryUL"> -->
@@ -45,7 +65,26 @@
         </div>
 
 
+
+
+        <!-- Account menu for phone -->
+        <i onclick=" openAccountForPhoneMenu()" class="fa-solid fa-user"></i>
+        <div class="thePhoneAccountMeny">
+            <?php
+            if (get_the_title() !== 'Login' && get_the_title() !== 'Mitt Konto' && get_the_title() !== 'User' && get_the_title() !== 'Members' && get_the_title() !== 'Logout') {
+            ?>
+                <div class="thePhone">
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'page-menu'
+                    ));
+                    ?>
+                </div>
+            <?php
+            }
+            ?>
         </div>
+        <!--  -->
 
         <div class="theHamburgerMenu">
             <i onclick="theClose()" class="fa-solid fa-x"></i>
@@ -77,6 +116,15 @@
 
         }
 
+        function openAccountMenu() {
+            document.querySelector('.theAccountMeny').classList.toggle('openMenu')
+
+        }
+
+        function openAccountForPhoneMenu() {
+            document.querySelector('.thePhoneAccountMeny').classList.toggle('openPhoneMenu')
+
+        }
 
         // function openCategory() {
         //     document.querySelector('.theCategoryDiv').classList.toggle('openCategory')
