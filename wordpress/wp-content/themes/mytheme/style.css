@@ -466,27 +466,45 @@ Hamburger menyns sträng knapp
 /*  */
 
 /* Account meny for users */
-/* .theAccountMeny {
-  position: fixed;
-  right: -1500px;
-} */
-/*  */
+
+.fa-solid.fa-user {
+  font-size: 40px;
+  left: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  position: fixed !important;
+  top: 60px;
+}
 
 .thePhoneAccountMeny {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   text-align: center;
   position: fixed !important ;
-  left: -500px !important;
   top: 100px;
   background-color: darkgray;
   font-size: 30px;
+  border-radius: 10px; */
+  position: fixed !important ;
+  left: -500px !important;
+  flex-direction: column;
+  text-align: center;
+  top: 120px;
+  background-color: #e3e3e3;
+  font-size: 30px;
   border-radius: 10px;
+  width: 40%;
 }
 
 .thePhoneAccountMeny.openPhoneMenu {
   position: fixed !important;
-  left: 60px !important;
+  left: 0px !important;
+}
+
+.thePhoneAccountMeny ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .thePhoneAccountMeny.openPhoneMenu li {
@@ -495,20 +513,21 @@ Hamburger menyns sträng knapp
 
 .thePhoneAccountMeny.openPhoneMenu a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
-/* .theAccountMeny #menu-meny2-1.menu {
-  display: flex !important;
-  flex-direction: column !important;
-} */
+.thePhoneAccountMeny.openPhoneMenu a:hover {
+  color: darkblue;
+}
+
+/*  */
 
 /* Smart Tablet */
 @media screen and (min-width: 768px) {
   /* Startsida butik */
   /*  */
   .theHeader {
-    height: 100px;
+    height: 120px;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -765,8 +784,8 @@ Hamburger menyns sträng knapp
 
   /* Product search */
   .woocommerce-product-search {
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
   }
 
   .search-field {
@@ -804,6 +823,39 @@ Hamburger menyns sträng knapp
 
   /* Account meny for users */
 
+  .fa-solid.fa-user {
+    display: none;
+  }
+
+  .fa-regular.fa-user {
+    position: fixed;
+    font-size: 40px;
+    top: 35px !important;
+    left: 50px;
+  }
+
+  .theAccountMeny {
+    position: fixed !important ;
+    left: -800px !important;
+    flex-direction: column;
+    text-align: center;
+    top: 120px;
+    background-color: #e3e3e3;
+    font-size: 35px;
+    border-radius: 10px;
+    width: 40%;
+  }
+
+  .theAccountMeny ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .theAccountMeny.openMenu {
+    position: fixed !important;
+    left: 0 !important;
+  }
   /*  */
 }
 
@@ -814,7 +866,7 @@ Hamburger menyns sträng knapp
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 50px;
   }
 
   /* Product search */
@@ -822,13 +874,12 @@ Hamburger menyns sträng knapp
   .theComputerNav .woocommerce-product-search {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    right: 0;
+    /* position: absolute;
+    right: 0; */
   }
 
   .theComputerNav .search-field {
     width: 100%;
-
     font-size: 20px;
     font-family: Arial;
   }
@@ -891,12 +942,20 @@ Hamburger menyns sträng knapp
   /* Account meny for users */
   .theAccountMeny {
     position: fixed;
-    left: -500px;
+    left: 1500px;
+    z-index: 100;
+  }
+
+  .theAccountMeny ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .theAccountMeny.openMenu {
     position: fixed;
     left: 0;
+    z-index: 100;
   }
   /*  */
 }

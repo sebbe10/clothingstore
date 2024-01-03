@@ -13,7 +13,6 @@
     <?php wp_head() ?>
 
     <?php get_header() ?>
-
     <header class="theHeader">
         <h1 class="theHeadName">
             <a href="http://localhost/clothingstore/wordpress/">
@@ -29,7 +28,9 @@
             ?>
 
             <!-- Account menu -->
-            <i onclick="openAccountMenu()" class="fa-solid fa-user"></i>
+
+
+            <i onclick="openAccountMenu()" class="fa-regular fa-user"></i>
             <div class="theAccountMeny">
                 <?php
                 if (get_the_title() !== 'Login' && get_the_title() !== 'Mitt Konto' && get_the_title() !== 'User' && get_the_title() !== 'Members' && get_the_title() !== 'Logout') {
@@ -68,8 +69,12 @@
 
 
         <!-- Account menu for phone -->
-        <i onclick=" openAccountForPhoneMenu()" class="fa-solid fa-user"></i>
+
+        <i onclick="openAccountForPhoneMenu()" class="fa-solid fa-user"></i>
+
+
         <div class="thePhoneAccountMeny">
+
             <?php
             if (get_the_title() !== 'Login' && get_the_title() !== 'Mitt Konto' && get_the_title() !== 'User' && get_the_title() !== 'Members' && get_the_title() !== 'Logout') {
             ?>
@@ -105,15 +110,16 @@
     </header>
 
 
+
     <script>
         function theOpenMenu() {
             document.querySelector('.theHamburgerMenu').classList.toggle('youOpen')
+            document.querySelector('.thePhoneAccountMeny').classList.remove('openPhoneMenu')
+
         }
 
         function theClose() {
             document.querySelector('.theHamburgerMenu').classList.remove('youOpen')
-            // document.querySelector('.theCategoryDiv').classList.remove('openCategory')
-
         }
 
         function openAccountMenu() {
@@ -123,8 +129,11 @@
 
         function openAccountForPhoneMenu() {
             document.querySelector('.thePhoneAccountMeny').classList.toggle('openPhoneMenu')
-
+            document.querySelector('.theHamburgerMenu').classList.remove('youOpen')
         }
+
+
+
 
         // function openCategory() {
         //     document.querySelector('.theCategoryDiv').classList.toggle('openCategory')
