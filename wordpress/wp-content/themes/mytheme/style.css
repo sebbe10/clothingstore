@@ -537,6 +537,23 @@ Hamburger menyns sträng knapp
 
 /*  */
 
+/* Single product */
+
+.wp-post-image {
+  width: 80% !important;
+  height: 350px !important;
+  margin: auto;
+  margin-top: 10px;
+}
+.zoomImg {
+  display: none !important;
+}
+
+.woocommerce-product-gallery__trigger {
+  display: none;
+}
+/*  */
+
 /* Smart Tablet */
 @media screen and (min-width: 768px) {
   /* Startsida butik */
