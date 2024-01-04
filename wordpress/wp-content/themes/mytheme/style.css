@@ -57,6 +57,7 @@
   cursor: pointer;
   position: fixed !important;
   top: 60px;
+  z-index: 100;
 }
 
 /*  */
@@ -472,7 +473,7 @@ Hamburger menyns sträng knapp
   left: 20px;
   font-size: 40px;
   cursor: pointer;
-  position: fixed !important;
+  position: absolute !important;
   top: 60px;
 }
 
@@ -485,8 +486,8 @@ Hamburger menyns sträng knapp
   background-color: darkgray;
   font-size: 30px;
   border-radius: 10px; */
-  position: fixed !important ;
-  left: -500px !important;
+  position: absolute !important ;
+  left: -2000px !important;
   flex-direction: column;
   text-align: center;
   top: 120px;
@@ -497,14 +498,28 @@ Hamburger menyns sträng knapp
 }
 
 .thePhoneAccountMeny.openPhoneMenu {
-  position: fixed !important;
+  position: absolute !important;
   left: 0px !important;
+  z-index: 100;
 }
 
 .thePhoneAccountMeny ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.menu-item-192 {
+  background-color: black !important;
+}
+.menu-item-192 a {
+  color: white !important;
+}
+
+.menu-item-192:hover,
+.menu-item-192 a:hover {
+  background-color: darkgray !important;
+  color: white !important;
 }
 
 .thePhoneAccountMeny.openPhoneMenu li {
@@ -582,7 +597,7 @@ Hamburger menyns sträng knapp
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 100%;
+    width: 80%;
     height: 350px;
     /* border: 1px solid black; */
   }
@@ -786,6 +801,10 @@ Hamburger menyns sträng knapp
   .woocommerce-product-search {
     display: flex !important;
     flex-direction: row !important;
+    right: 10px;
+    position: absolute;
+    top: 50px;
+    width: 30%;
   }
 
   .search-field {
@@ -828,22 +847,25 @@ Hamburger menyns sträng knapp
   }
 
   .fa-regular.fa-user {
-    position: fixed;
+    position: absolute;
     font-size: 40px;
-    top: 35px !important;
+    top: 45px !important;
     left: 50px;
+    cursor: pointer;
+    z-index: 100;
   }
 
   .theAccountMeny {
-    position: fixed !important ;
+    position: absolute !important ;
     left: -800px !important;
     flex-direction: column;
     text-align: center;
-    top: 120px;
+    /* top: 80px; */
     background-color: #e3e3e3;
     font-size: 35px;
     border-radius: 10px;
-    width: 40%;
+    width: 25%;
+    z-index: 100;
   }
 
   .theAccountMeny ul {
@@ -853,9 +875,10 @@ Hamburger menyns sträng knapp
   }
 
   .theAccountMeny.openMenu {
-    position: fixed !important;
+    position: absolute !important;
     left: 0 !important;
   }
+
   /*  */
 }
 
@@ -874,6 +897,8 @@ Hamburger menyns sträng knapp
   .theComputerNav .woocommerce-product-search {
     display: flex;
     flex-direction: row;
+    width: 30%;
+    top: 50px;
     /* position: absolute;
     right: 0; */
   }
@@ -944,6 +969,7 @@ Hamburger menyns sträng knapp
     position: fixed;
     left: 1500px;
     z-index: 100;
+    width: 25%;
   }
 
   .theAccountMeny ul {
@@ -953,7 +979,7 @@ Hamburger menyns sträng knapp
   }
 
   .theAccountMeny.openMenu {
-    position: fixed;
+    position: absolute;
     left: 0;
     z-index: 100;
   }

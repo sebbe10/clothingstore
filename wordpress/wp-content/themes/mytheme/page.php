@@ -20,6 +20,8 @@
         endwhile;
     endif;
     ?>
+
+
     <?php get_footer() ?>
 
 </body>

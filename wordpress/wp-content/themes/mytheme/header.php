@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
+    <link rel="stylesheet" href="<?php
+
+                                    use um\core\Login;
+
+                                    bloginfo('stylesheet_url') ?>">
     <script src="https://kit.fontawesome.com/ed4823c162.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,6 +24,7 @@
             </a>
         </h1>
 
+
         <i onclick="theOpenMenu()" class="fa-solid fa-bars"></i>
 
         <div class="theComputerNav">
@@ -33,7 +38,7 @@
             <i onclick="openAccountMenu()" class="fa-regular fa-user"></i>
             <div class="theAccountMeny">
                 <?php
-                if (get_the_title() !== 'Login' && get_the_title() !== 'Mitt Konto' && get_the_title() !== 'User' && get_the_title() !== 'Members' && get_the_title() !== 'Logout') {
+                if (get_the_title() !== 'Login' && get_the_title() !== 'Mitt Konto' && get_the_title() !== 'User' && get_the_title() !== 'Members' && get_the_title() !== 'Register' && get_the_title() !== 'Logout') {
                 ?>
                     <div class="theUndersidaMenu">
                         <?php
@@ -76,7 +81,8 @@
         <div class="thePhoneAccountMeny">
 
             <?php
-            if (get_the_title() !== 'Login' && get_the_title() !== 'Mitt Konto' && get_the_title() !== 'User' && get_the_title() !== 'Members' && get_the_title() !== 'Logout') {
+            if (get_the_title() !== 'Login' && get_the_title() !== 'Mitt Konto' && get_the_title() !== 'User' && get_the_title() !== 'Members' && get_the_title() !== 'Register' && get_the_title() !== 'Logout') {
+
             ?>
                 <div class="thePhone">
                     <?php
@@ -132,14 +138,7 @@
             document.querySelector('.theHamburgerMenu').classList.remove('youOpen')
         }
 
-
-
-
-        // function openCategory() {
-        //     document.querySelector('.theCategoryDiv').classList.toggle('openCategory')
-        // }
-
-        // function openCategory2() {
-        //     document.querySelector('.theCategoryDiv2').classList.toggle('openCategory2')
+        // function removeABody() {
+        //     document.querySelector('.theAccountMeny').classList.remove('openMenu')
         // }
     </script>

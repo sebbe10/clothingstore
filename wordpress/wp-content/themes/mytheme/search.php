@@ -44,8 +44,6 @@
                     </h2>
                 </div>
         <?php
-
-            // the_content();
             endwhile;
         endif;
         ?>
