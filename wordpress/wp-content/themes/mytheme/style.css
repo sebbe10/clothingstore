@@ -598,6 +598,74 @@ Hamburger menyns sträng knapp
   position: relative;
   left: 0;
 }
+
+.comment-reply-title {
+  font-size: 25px;
+  text-align: center;
+}
+
+#rating {
+  display: none !important;
+}
+
+.theRating {
+  font-size: 25px;
+}
+
+.comment-form-rating {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+.stars {
+  font-size: 23px;
+}
+
+.stars a {
+  color: black;
+}
+.star-1.active {
+  color: red;
+}
+.star-2.active {
+  color: darkred;
+}
+.star-3.active {
+  color: #cd7f32;
+}
+.star-4.active {
+  color: silver;
+}
+.star-5.active {
+  color: gold;
+}
+
+.theReviewAboutProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-form-author,
+.comment-form-email {
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+  width: 280px;
+  margin: auto;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.form-submit input {
+  font-size: 20px;
+}
+
 /*  */
 
 /* Smart Tablet */
