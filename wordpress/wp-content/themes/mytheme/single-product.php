@@ -40,7 +40,7 @@
             global $product;
             global $name;
             $id = $product->id;
-            // echo 'Användar id:' . $id;
+            echo 'Användar id:' . $id;
             $args = array('post_type' => 'product', 'post_id' => $id);
             $comments = get_comments($args);
             wp_list_comments(array('callback' => 'woocommerce_comments'), $comments);
@@ -128,7 +128,6 @@
     <script>
         function showReviews() {
             document.querySelector('.reviews').classList.toggle('theshow')
-
         }
     </script>
 
