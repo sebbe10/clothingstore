@@ -561,6 +561,7 @@ Hamburger menyns sträng knapp
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 .reviews {
@@ -584,11 +585,37 @@ Hamburger menyns sträng knapp
 
 .theReviewButton {
   padding: 10px;
+  background-color: cornflowerblue !important;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.theReviewButton.youactive {
+  background-color: #6495ed9c !important;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .theShowCommentsButton {
   padding: 10px;
+  background-color: #6495ed9c !important;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
+
+.theShowCommentsButton.youactive {
+  background-color: cornflowerblue !important;
+  color: white !important;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .comments {
   position: absolute;
   left: -500px;
@@ -665,6 +692,123 @@ Hamburger menyns sträng knapp
 .form-submit input {
   font-size: 20px;
 }
+
+/*  */
+
+/*Single product */
+
+.variations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.variations body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.variations tr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.variations th {
+  font-size: 20px;
+}
+
+.variations td {
+  display: flex;
+  flex-direction: column;
+}
+
+.variations select {
+  width: 280px;
+  height: 25px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.woocommerce-review-link {
+  text-decoration: none;
+  color: black;
+  cursor: none;
+}
+
+.pswp__bg {
+  display: none !important;
+}
+
+.pswp__img {
+  display: none !important;
+}
+
+.pswp__ui {
+  display: none !important;
+}
+
+.sku_wrapper {
+  display: none;
+}
+
+.tabs.wc-tabs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.description_tab {
+  background-color: cornflowerblue !important;
+  color: white !important;
+  width: 80%;
+}
+
+.description_tab.active {
+  background-color: #6495ed9c !important;
+  width: 80%;
+}
+
+.description_tab a {
+  color: white !important;
+  width: 80% !important;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.additional_information_tab {
+  background-color: cornflowerblue !important;
+  color: white !important;
+  width: 80%;
+}
+
+.additional_information_tab.active {
+  background-color: #6495ed9c !important;
+  width: 80%;
+}
+.additional_information_tab a {
+  color: white !important;
+  width: 100% !important;
+}
+/*  */
 
 /*  */
 

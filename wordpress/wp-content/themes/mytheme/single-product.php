@@ -140,13 +140,19 @@
     function addReviews() {
         document.querySelector('.reviews').classList.toggle('theshow')
         document.querySelector('.comments').classList.remove('showcomments')
+        document.querySelector('.theReviewButton').classList.toggle('youactive')
+        // document.querySelector('.theShowCommentsButton').classList.remove('youactive')
+        document.querySelector('.theShowCommentsButton').classList.toggle('youactive')
+
 
     }
 
     function showReviews() {
         document.querySelector('.comments').classList.toggle('showcomments')
         document.querySelector('.reviews').classList.remove('theshow')
-
+        document.querySelector('.theShowCommentsButton').classList.toggle('youactive')
+        // document.querySelector('.theReviewButton').classList.remove('youactive')
+        document.querySelector('.theReviewButton').classList.toggle('youactive')
     }
 </script>
 
