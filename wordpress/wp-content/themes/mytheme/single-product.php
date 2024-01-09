@@ -19,6 +19,10 @@
         endwhile;
     endif;
     ?>
+
+    <?php get_comments() ?>
+
+
     <div class="theReviewsAndComments">
         <button class="theReviewButton" onclick="addReviews()">Add reviews</button>
         <button class="theShowCommentsButton" onclick="showReviews()">Show Reviews</button>

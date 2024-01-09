@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="<?php
-
-                                    use um\core\Login;
-
                                     bloginfo('stylesheet_url') ?>">
     <script src="https://kit.fontawesome.com/ed4823c162.js" crossorigin="anonymous"></script>
 </head>
@@ -33,7 +30,6 @@
             ?>
 
             <!-- Account menu -->
-
 
             <i onclick="openAccountMenu()" class="fa-regular fa-user"></i>
             <div class="theAccountMeny">

@@ -495,12 +495,14 @@ Hamburger menyns sträng knapp
   font-size: 30px;
   border-radius: 10px;
   width: 40%;
+  z-index: 100 !important;
+  color: black !important;
 }
 
 .thePhoneAccountMeny.openPhoneMenu {
   position: absolute !important;
   left: 0px !important;
-  z-index: 100;
+  z-index: 100 !important;
 }
 
 .thePhoneAccountMeny ul {
@@ -693,10 +695,23 @@ Hamburger menyns sträng knapp
   font-size: 20px;
 }
 
+.woocommerce-noreviews {
+  display: none;
+}
+
 /*  */
 
 /*Single product */
 
+p.price {
+  text-align: center;
+  font-size: 25px;
+}
+
+.woocommerce-product-details__short-description p {
+  text-align: center;
+  font-size: 25px;
+}
 .variations {
   display: flex;
   justify-content: center;
@@ -768,22 +783,24 @@ Hamburger menyns sträng knapp
   flex-direction: column;
   text-align: center;
   align-items: center;
+  gap: 4px;
 }
 
-.description_tab {
-  background-color: cornflowerblue !important;
-  color: white !important;
-  width: 80%;
+.product_meta {
+  font-size: 25px;
 }
 
-.description_tab.active {
-  background-color: #6495ed9c !important;
-  width: 80%;
+.posted_in a {
+  text-decoration: none;
+  color: black;
 }
 
-.description_tab a {
-  color: white !important;
-  width: 80% !important;
+.posted_in a:hover {
+  color: darkblue;
+}
+
+.input-text.qty.text {
+  height: 30px;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
@@ -794,21 +811,179 @@ Hamburger menyns sträng knapp
   position: relative !important;
 }
 
+.description_tab {
+  background-color: cornflowerblue !important;
+  color: white !important;
+  width: 80%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.description_tab.active {
+  background-color: #6495ed9c !important;
+  width: 80%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.description_tab.active a {
+  width: 100% !important;
+  color: white !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.description_tab a {
+  color: white !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .additional_information_tab {
   background-color: cornflowerblue !important;
   color: white !important;
   width: 80%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.additional_information_tab a {
+  color: white !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .additional_information_tab.active {
   background-color: #6495ed9c !important;
+  color: white !important;
   width: 80%;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-.additional_information_tab a {
+
+.additional_information_tab.active a {
   color: white !important;
   width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-/*  */
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+  display: none !important;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
+  display: none !important;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  border: none !important;
+  background-color: #e9e6ed;
+  color: #515151;
+  display: inline-block;
+  position: relative;
+  z-index: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 4px !important;
+}
+
+/* Beskrivning */
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: whitesmoke !important;
+}
+
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab
+  p {
+  background: white !important;
+  padding: 5px !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+/* Ytterligare information */
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--additional_information.panel.entry-content.wc-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.woocommerce-product-attributes.shop_attributes {
+  background-color: whitesmoke !important;
+}
+
+.woocommerce-product-attributes.shop_attributes tbody {
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.woocommerce-product-attributes-item__label,
+.woocommerce-product-attributes-item__value {
+  background-color: white !important;
+  text-align: start;
+}
+
+.woocommerce-product-attributes.shop_attributes {
+  width: 100% !important;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-spacing: 0 !important;
+  /* border-collapse: separate;
+  text-indent: initial; */
+  border-collapse: 0 !important;
+  text-indent: 0 !important;
+}
+
+.woocommerce table.shop_attributes th {
+  border-bottom: 0 !important;
+  text-align: start;
+}
+.woocommerce table.shop_attributes td {
+  border-bottom: 0 !important;
+  text-align: start;
+}
+
+.woocommerce-product-attributes-item.woocommerce-product-attributes-item--attribute_size,
+.woocommerce-product-attributes-item.woocommerce-product-attributes-item--attribute_color {
+  width: 50%;
+  margin: auto !important;
+}
+
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
+  display: flex;
+  justify-content: center;
+}
+
+woocommerce-noreviews
+/* .woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
+  margin: auto !important;
+} */
+
+ .woocommerce div.product form.cart .button {
+  background: green !important;
+}
+
+.woocommerce div.product form.cart .button {
+  background: green !important;
+}
+
+button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed:hover {
+  background: darkgreen !important;
+}
 
 /*  */
 
