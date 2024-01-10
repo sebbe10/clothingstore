@@ -215,7 +215,9 @@ body {
   padding-right: 10px !important;
   padding-top: 10px !important;
   padding-bottom: 10px !important;
-  margin-top: 70px !important;
+  /* margin-top: 70px !important; */
+  margin: 10px !important;
+  border: 1px solid black;
 }
 
 .products .product:hover {
@@ -272,7 +274,7 @@ body {
   flex-direction: row;
   justify-content: center;
   margin: auto;
-  width: 80%;
+  width: 100%;
   height: auto;
   text-align: center;
   border-radius: 5px;
@@ -1075,6 +1077,32 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   background-color: whitesmoke;
 }
 
+/* .woocommerce .woocommerce-ordering {
+  border: 1px solid;
+  width: 99% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto !important;
+  float: none !important;
+} */
+
+.woocommerce .woocommerce-ordering {
+  border: 1px solid;
+  width: 79% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto !important;
+  float: none !important;
+}
+
+.onsale {
+  display: none;
+}
+
 /*  */
 
 /* Smart Tablet */
@@ -1297,7 +1325,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    width: 80%;
+    width: 100%;
     height: auto;
     text-align: center;
     border-radius: 5px;
@@ -1547,5 +1575,24 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
     left: 0;
     z-index: 100;
   }
+
+  .woocommerce-ordering .orderby {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: black;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
   /*  */
 }

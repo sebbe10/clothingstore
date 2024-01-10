@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php
                                     bloginfo('stylesheet_url') ?>">
     <script src="https://kit.fontawesome.com/ed4823c162.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -112,7 +113,7 @@
     </header>
 
 
-    <p class="thep">Bild1</p>
+    <!-- <p class="thep">Bild1</p> -->
 
     <script>
         function theOpenMenu() {
@@ -134,13 +135,26 @@
             document.querySelector('.theHamburgerMenu').classList.remove('youOpen')
         }
 
+        //         let ha = document.querySelector(".thep");
+
+        // setInterval(() => {
+        //   if (ha.innerHTML === "Bild1") {
+        //     ha.innerHTML = "Bild2";
+        //     //    <img src="theimg/Skärmbild 2023-12-28 093229.png" alt="">
+        //   } else {
+        //     ha.innerHTML = "Bild1";
+        //   }
+        // }, 5000);
+
+
+
         // let ha = document.querySelector('.thep')
 
         // setInterval(() => {
         //     if (ha.innerHTML === 'Bild1') {
 
-        //         ha.innerHTML = 'Bild2'
-
+        //         // ha.innerHTML = 'Bild2';
+        //         //    <img src="theimg/Skärmbild 2023-12-28 093229.png" alt="">
         //     } else {
         //         ha.innerHTML = 'Bild1'
         //     }

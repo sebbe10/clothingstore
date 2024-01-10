@@ -18,13 +18,11 @@
     if (have_posts()) :
         while (have_posts()) : the_post();
     ?>
-            <p>Namn:
-                <?php
-                the_title();
-                ?>
-            </p>
-    <?php
+
+            <?php
             the_content();
+            ?>
+    <?php
         endwhile;
     endif;
     ?>
