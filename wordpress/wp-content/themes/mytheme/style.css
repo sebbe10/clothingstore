@@ -3,12 +3,15 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: whitesmoke;
+}
 
 /* Startsida butik */
 /*  */
 .theHeader {
   height: 100px;
-  background-color: whitesmoke;
+  background-color: #6495ed9c;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -62,8 +65,8 @@
 
 /*  */
 /* 
-Hamburger menyns sträng knapp
- */
+  Hamburger menyns sträng knapp
+   */
 
 .fa-solid.fa-x {
   color: darkred;
@@ -124,55 +127,67 @@ Hamburger menyns sträng knapp
 
 .woocommerce-product-search {
   display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
+
 #woocommerce-product-search-field-1 {
   padding-top: 4px !important;
   padding-bottom: 4px !important;
+}
+
+.woocommerce-product-search button {
+  background: darkgreen;
+  color: white;
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 5px;
 }
 /*  */
 
 /* Själva innehållets design till hamburger menyn och gjort en egen category*/
 
 /* .theBtnForCategory {
-  text-align: center;
-  font-size: 25px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.theBtnForCategory:hover {
-  background-color: whitesmoke;
-}
-
-.theCategoryDiv {
-  text-align: center;
-  position: fixed;
-  right: -500px;
-} */
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .theBtnForCategory:hover {
+    background-color: whitesmoke;
+  }
+  
+  .theCategoryDiv {
+    text-align: center;
+    position: fixed;
+    right: -500px;
+  } */
 
 /* .theCategoryDiv.openCategory { */
 /* .theCategoryDiv.openCategory {
-  position: fixed;
-  right: 0;
-  width: auto;
-  height: 100vh;
-  background-color: white;
-}
-
-.theLI {
-  margin-top: 15px;
-}
-
-.theA {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 18px;
-}
-.theCategoryDiv .theLI:hover {
-  background-color: whitesmoke;
-} */
+    position: fixed;
+    right: 0;
+    width: auto;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .theLI {
+    margin-top: 15px;
+  }
+  
+  .theA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18px;
+  }
+  .theCategoryDiv .theLI:hover {
+    background-color: whitesmoke;
+  } */
 
 /*  */
 
@@ -289,7 +304,7 @@ Hamburger menyns sträng knapp
   flex-direction: row;
   height: 100px;
   width: 100%;
-  background-color: lightgray;
+  background-color: #6495ed9c;
   color: black;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -479,13 +494,13 @@ Hamburger menyns sträng knapp
 
 .thePhoneAccountMeny {
   /* display: flex;
-  flex-direction: column;
-  text-align: center;
-  position: fixed !important ;
-  top: 100px;
-  background-color: darkgray;
-  font-size: 30px;
-  border-radius: 10px; */
+    flex-direction: column;
+    text-align: center;
+    position: fixed !important ;
+    top: 100px;
+    background-color: darkgray;
+    font-size: 30px;
+    border-radius: 10px; */
   position: absolute !important ;
   left: -2000px !important;
   flex-direction: column;
@@ -564,6 +579,7 @@ Hamburger menyns sträng knapp
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin: 15px;
 }
 
 .reviews {
@@ -620,12 +636,22 @@ Hamburger menyns sträng knapp
 
 .comments {
   position: absolute;
-  left: -500px;
+  top: -500px;
+}
+
+.comments h2 {
+  display: none;
 }
 
 .comments.showcomments {
   position: relative;
-  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
 }
 
 .comment-reply-title {
@@ -742,7 +768,7 @@ p.price {
 }
 
 .variations select {
-  width: 280px;
+  width: 320px;
   height: 25px;
   margin-top: 10px;
   border-radius: 5px;
@@ -788,6 +814,15 @@ p.price {
 
 .product_meta {
   font-size: 25px;
+}
+
+.posted_in {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: whitesmoke;
 }
 
 .posted_in a {
@@ -943,7 +978,7 @@ p.price {
   padding: 10px;
   border-spacing: 0 !important;
   /* border-collapse: separate;
-  text-indent: initial; */
+    text-indent: initial; */
   border-collapse: 0 !important;
   text-indent: 0 !important;
 }
@@ -968,12 +1003,12 @@ p.price {
   justify-content: center;
 }
 
-woocommerce-noreviews
+/* woocommerce-noreviews */
 /* .woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
-  margin: auto !important;
-} */
+    margin: auto !important;
+  } */
 
- .woocommerce div.product form.cart .button {
+.woocommerce div.product form.cart .button {
   background: green !important;
 }
 
@@ -983,6 +1018,61 @@ woocommerce-noreviews
 
 button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-needed:hover {
   background: darkgreen !important;
+}
+
+.reset_variations {
+  color: black !important;
+  font-size: 18px !important;
+  text-decoration: none;
+}
+
+.reset_variations:hover {
+  color: darkblue !important;
+}
+
+.summary.entry-summary {
+  background-color: white;
+}
+
+.woocommerce-Price-amount.amount {
+  font-size: 22px !important;
+}
+
+.stock.in-stock {
+  font-size: 22px !important;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.comment_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: whitesmoke;
+  margin: 20px;
+}
+
+.comment-text {
+  font-size: 17px;
+}
+
+.comment-form-comment {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.ppc-button-ppcp-gateway {
+  background-color: whitesmoke;
 }
 
 /*  */
@@ -1069,8 +1159,8 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 
   /*  */
   /* 
-Hamburger menyns sträng knapp
- */
+  Hamburger menyns sträng knapp
+   */
 
   .fa-solid.fa-x {
     color: darkred;
@@ -1086,48 +1176,48 @@ Hamburger menyns sträng knapp
   /* Själva innehållets design till hamburger menyn och gjort en egen category*/
 
   /* .theBtnForCategory2 {
-    position: absolute;
-    right: 30px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-
-  .theBtnForCategory2:hover {
-    color: darkblue;
-  }
-
-  .theCategoryDiv2 {
-    text-align: center;
-    position: fixed;
-    top: -500px;
-  } */
+      position: absolute;
+      right: 30px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  
+    .theBtnForCategory2:hover {
+      color: darkblue;
+    }
+  
+    .theCategoryDiv2 {
+      text-align: center;
+      position: fixed;
+      top: -500px;
+    } */
 
   /* .theCategoryDiv.openCategory { */
   /* .theCategoryDiv2.openCategory2 {
-    position: fixed;
-    right: 30px;
-    top: 90px;
-    width: auto;
-    height: auto;
-    margin-top: 50px;
-    background-color: whitesmoke;
-    border: 1px solid black;
-  }
-
-  .theLI {
-    margin-top: 15px;
-  }
-
-  .theA {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 18px;
-  }
-  .theCategoryDiv .theLI:hover {
-    background-color: whitesmoke;
-  } */
+      position: fixed;
+      right: 30px;
+      top: 90px;
+      width: auto;
+      height: auto;
+      margin-top: 50px;
+      background-color: whitesmoke;
+      border: 1px solid black;
+    }
+  
+    .theLI {
+      margin-top: 15px;
+    }
+  
+    .theA {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 18px;
+    }
+    .theCategoryDiv .theLI:hover {
+      background-color: whitesmoke;
+    } */
 
   /*  */
 
@@ -1299,7 +1389,7 @@ Hamburger menyns sträng knapp
   .fa-regular.fa-user {
     position: absolute;
     font-size: 40px;
-    top: 45px !important;
+    top: 55px !important;
     left: 50px;
     cursor: pointer;
     z-index: 100;
@@ -1329,6 +1419,30 @@ Hamburger menyns sträng knapp
     left: 0 !important;
   }
 
+  .product.type-product {
+    /* display: flex; */
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+  }
+
+  .theSingleProduct .woocommerce {
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .variations select {
+    width: 220px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
   /*  */
 }
 
@@ -1350,7 +1464,7 @@ Hamburger menyns sträng knapp
     width: 30%;
     top: 50px;
     /* position: absolute;
-    right: 0; */
+      right: 0; */
   }
 
   .theComputerNav .search-field {

@@ -10,18 +10,24 @@
 
 <body>
     <?php
-    get_header() ?>
-    <?php
+    get_header()
+    ?>
 
+
+    <?php
     if (have_posts()) :
         while (have_posts()) : the_post();
+    ?>
+            <p>Namn:
+                <?php
+                the_title();
+                ?>
+            </p>
+    <?php
             the_content();
         endwhile;
     endif;
     ?>
-
-    <?php get_comments() ?>
-
 
     <div class="theReviewsAndComments">
         <button class="theReviewButton" onclick="addReviews()">Add reviews</button>

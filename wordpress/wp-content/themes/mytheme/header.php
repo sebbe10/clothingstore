@@ -112,12 +112,12 @@
     </header>
 
 
+    <p class="thep">Bild1</p>
 
     <script>
         function theOpenMenu() {
             document.querySelector('.theHamburgerMenu').classList.toggle('youOpen')
             document.querySelector('.thePhoneAccountMeny').classList.remove('openPhoneMenu')
-
         }
 
         function theClose() {
@@ -134,6 +134,17 @@
             document.querySelector('.theHamburgerMenu').classList.remove('youOpen')
         }
 
+        // let ha = document.querySelector('.thep')
+
+        // setInterval(() => {
+        //     if (ha.innerHTML === 'Bild1') {
+
+        //         ha.innerHTML = 'Bild2'
+
+        //     } else {
+        //         ha.innerHTML = 'Bild1'
+        //     }
+        // }, 5000)
         // function removeABody() {
         //     document.querySelector('.theAccountMeny').classList.remove('openMenu')
         // }
