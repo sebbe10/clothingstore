@@ -1103,6 +1103,48 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   display: none;
 }
 
+.menu-meny3-container li {
+  list-style: none;
+}
+
+.menu-meny3-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-meny3-container a:hover {
+  color: darkblue;
+}
+
+.wpcf7-form.init {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wpcf7-form.submitting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wpcf7-form.invalid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wpcf7-form-control.wpcf7-submit.has-spinner {
+  padding: 0px 133px;
+  display: flex;
+}
+
+.wpcf7-form.failed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*  */
 
 /* Smart Tablet */
