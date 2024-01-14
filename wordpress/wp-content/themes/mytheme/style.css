@@ -1185,8 +1185,14 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   text-align: center;
 }
 
-.wpcf7-form.init {
+/* .wpcf7-form.init {
   margin: auto;
+} */
+
+.wpcf7-form.init p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wpcf7-form-control {
