@@ -1145,6 +1145,59 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   align-items: center;
 }
 
+.wpcf7-form.sent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Empty cart*/
+
+.wc-block-grid__products {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.wc-block-grid__product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px !important;
+  height: 400px !important;
+  border: 1px solid black !important;
+}
+
+.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  width: 250px !important;
+  height: 300px !important;
+}
+
+.wp-block-heading {
+  font-size: 30px;
+  text-align: center;
+}
+
+.wpcf7-form.init {
+  margin: auto;
+}
+
+.wpcf7-form-control {
+  margin: 4px;
+  padding: 2px;
+}
+
+.thepolicy {
+  display: flex;
+  flex-direction: column;
+}
 /*  */
 
 /* Smart Tablet */
