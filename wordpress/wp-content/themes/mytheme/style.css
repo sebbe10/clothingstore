@@ -1283,7 +1283,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 @media screen and (min-width: 768px) {
   /* Startsida butik */
   /*  */
-  .theHeader {
+  .theHeader 
     height: 120px;
     background-color: whitesmoke;
     display: flex;
