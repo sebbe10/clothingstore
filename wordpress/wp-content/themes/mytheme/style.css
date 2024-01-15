@@ -1275,6 +1275,10 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 }
 /*  */
 
+.wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
+  margin-top: 35px !important;
+}
+
 /* Smart Tablet */
 @media screen and (min-width: 768px) {
   /* Startsida butik */
@@ -1662,6 +1666,10 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   .single-product {
     margin-top: 50px;
   }
+
+  .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
+    margin-top: 35px !important;
+  }
 }
 
 /* Computer */
@@ -1804,5 +1812,9 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 
   .single-product {
     margin-top: 50px;
+  }
+
+  .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
+    margin-top: 35px !important;
   }
 }
