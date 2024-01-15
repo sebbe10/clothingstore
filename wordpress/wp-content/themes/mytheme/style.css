@@ -1266,6 +1266,15 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 }
 /*  */
 
+/* Betalnings method */
+.paymethod {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*  */
+
 /* Smart Tablet */
 @media screen and (min-width: 768px) {
   /* Startsida butik */
@@ -1641,6 +1650,13 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   }
   /*  */
 
+  /* Betalnings method */
+  .paymethod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   /*  */
 }
 
@@ -1771,6 +1787,15 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
     width: 250px !important;
     height: 250px !important;
+  }
+  /*  */
+
+  /* Betalnings method */
+  .paymethod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   /*  */
 }

@@ -10,6 +10,11 @@
         ));
     }
     ?>
+    <div class="paymethod">
+        <h3>Betalnings metoder</h3>
+        <p>Betala vid leverans eller med PayPal</p>
+
+    </div>
 </footer>
 
 <?php get_footer() ?>
