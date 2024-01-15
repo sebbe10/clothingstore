@@ -15,7 +15,6 @@
         <p>Betala vid leverans eller med PayPal</p>
     </div>
     <p>Fri frakt över 300kr annars en frakt kostnad på 45kr</p>
-    <p>d</p>
 </footer>
 
 <?php get_footer() ?>
