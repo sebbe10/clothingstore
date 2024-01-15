@@ -1289,7 +1289,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   /* Sidans namn */
