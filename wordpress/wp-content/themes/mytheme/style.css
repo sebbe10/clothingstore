@@ -1726,7 +1726,7 @@ a.cart-contents {
 @media screen and (min-width: 1200px) {
   .theComputerNav ul {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
