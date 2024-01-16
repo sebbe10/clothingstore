@@ -11,7 +11,7 @@
     <?php get_header() ?>
 
 
-    <p>search.php</p>
+
     <div class="theStyleSearch">
         <?php
         // get_search_form();

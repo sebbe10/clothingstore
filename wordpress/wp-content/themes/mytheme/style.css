@@ -217,11 +217,13 @@ body {
   padding-bottom: 10px !important;
   /* margin-top: 70px !important; */
   margin: 10px !important;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  background-color: white !important;
 }
 
 .products .product:hover {
-  background-color: whitesmoke;
+  background-color: white !important;
+  border: 1px solid black;
 }
 
 .products .product img {
@@ -396,8 +398,6 @@ body {
 }
 
 /*  */
-
-/* Search.php */
 
 .theStyleSearch {
   display: flex;
@@ -806,11 +806,13 @@ p.price {
   border-radius: 5px;
 }
 
-.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled,
+.cart {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: auto;
 }
 
 .woocommerce-review-link {
@@ -868,6 +870,7 @@ p.price {
 
 .input-text.qty.text {
   height: 30px;
+  width: 295px !important;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
@@ -1031,11 +1034,13 @@ p.price {
 /* Add to cart button single product */
 .woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .woocommerce div.product form.cart .button {
   background: green !important;
+  width: 295px !important;
 }
 
 .woocommerce div.product form.cart .button {
@@ -1162,16 +1167,28 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 }
 
 .wc-block-grid__product {
-  display: flex;
-  flex-direction: column;
-  width: 300px !important;
-  height: 420px !important;
-  margin: auto !important;
-  padding: 10px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
   text-align: center !important;
-  align-items: center;
+  width: 320px !important;
+  height: 420px !important;
   border-radius: 5px;
-  border: 1px solid black !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  background-color: white;
+}
+
+.wc-block-grid__product:hover {
+  border: 1px solid black;
+  width: 320px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  height: 420px !important;
 }
 
 .wc-block-grid.has-4-columns .wc-block-grid__product {
@@ -1293,7 +1310,7 @@ a.cart-contents {
 .fa-cart-shopping:before,
 .fa-shopping-cart:before {
   position: absolute !important;
-  right: 30px !important;
+  right: 20px !important;
   top: 0px !important;
   font-size: 30px !important;
 }
@@ -1303,6 +1320,13 @@ a.cart-contents {
 }
 
 /*  */
+
+/* Slut i lager */
+.stock.out-of-stock {
+  font-size: 22px;
+}
+/*  */
+
 /* Smart Tablet */
 @media screen and (min-width: 768px) {
   /* Startsida butik */
@@ -1343,6 +1367,7 @@ a.cart-contents {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+    position: relative;
   }
 
   .theComputerNav li {
@@ -1476,7 +1501,7 @@ a.cart-contents {
   }
 
   .products .product:hover {
-    background-color: whitesmoke;
+    background-color: white !important;
   }
 
   img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
@@ -1566,11 +1591,22 @@ a.cart-contents {
 
   /* Product search */
   .woocommerce-product-search {
+    /* display: flex !important;
+    flex-direction: row !important;
+    position: absolute;
+    top: 125px;
+    height: 100px;
+    align-items: center;
+    width: 98% !important; */
+
     display: flex !important;
     flex-direction: row !important;
     position: absolute;
-    top: 115px;
+    /* top: 70px; */
+    height: 100px;
+    align-items: center;
     width: 98% !important;
+    margin: 0 !important;
   }
 
   .search-field {
@@ -1579,10 +1615,12 @@ a.cart-contents {
     padding-top: 5px;
     font-size: 20px;
     font-family: Arial;
+    height: 35px;
   }
 
   .woocommerce-product-search button {
-    width: 20%;
+    width: 25%;
+    height: 35px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -1648,12 +1686,12 @@ a.cart-contents {
     top: 100px;
   }
 
-  .product.type-product {
-    /* display: flex; */
-    border: 1px solid black;
-    width: 70%;
-    margin: auto;
-  }
+  /* .product.type-product { */
+  /* display: flex; */
+  /* border: 1px solid black; */
+  /* width: 70%; */
+  /* margin: auto; */
+  /* } */
 
   .theSingleProduct .woocommerce {
     width: 100% !important;
@@ -1720,6 +1758,12 @@ a.cart-contents {
   }
 
   /*  */
+
+  /* Slut i lager */
+  .stock.out-of-stock {
+    font-size: 22px;
+  }
+  /*  */
 }
 
 /* Computer */
@@ -1738,18 +1782,22 @@ a.cart-contents {
     display: flex !important;
     flex-direction: row !important;
     position: absolute;
-    top: 115px;
+    /* top: 115px; */
+    height: 100px;
     width: 98% !important;
+    align-items: center;
   }
 
   .theComputerNav .search-field {
     width: 100%;
     font-size: 20px;
+    height: 35px;
     font-family: Arial;
   }
 
   .theComputerNav .woocommerce-product-search button {
-    width: 30%;
+    width: 25%;
+    height: 35px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -1890,6 +1938,12 @@ a.cart-contents {
 
   .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large {
     margin-top: 50px;
+  }
+  /*  */
+
+  /* Slut i lager */
+  .stock.out-of-stock {
+    font-size: 22px;
   }
   /*  */
 }
