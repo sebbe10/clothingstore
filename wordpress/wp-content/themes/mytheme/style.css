@@ -1244,6 +1244,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 .wp-block-heading {
   font-size: 30px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .wpcf7-form.init p {
@@ -1279,6 +1280,29 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   margin-top: 35px !important;
 }
 
+/* Cart */
+
+a.cart-contents {
+  text-decoration: none !important;
+  color: black !important;
+  position: absolute !important;
+  right: 50px !important;
+  font-size: 25px !important;
+}
+
+.fa-cart-shopping:before,
+.fa-shopping-cart:before {
+  position: absolute !important;
+  right: 30px !important;
+  top: 0px !important;
+  font-size: 30px !important;
+}
+
+.wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-small {
+  margin-top: 0;
+}
+
+/*  */
 /* Smart Tablet */
 @media screen and (min-width: 768px) {
   /* Startsida butik */
@@ -1545,7 +1569,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
     display: flex !important;
     flex-direction: row !important;
     position: absolute;
-    top: 100px;
+    top: 115px;
     width: 98% !important;
   }
 
@@ -1559,6 +1583,8 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 
   .woocommerce-product-search button {
     width: 20%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   /*  */
@@ -1670,6 +1696,30 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
     margin-top: 35px !important;
   }
+
+  /* Cart */
+
+  a.cart-contents {
+    text-decoration: none !important;
+    color: black !important;
+    position: absolute !important;
+    right: 50px !important;
+    font-size: 25px !important;
+  }
+
+  .fa-cart-shopping:before,
+  .fa-shopping-cart:before {
+    position: absolute !important;
+    right: 30px !important;
+    top: 0px !important;
+    font-size: 30px !important;
+  }
+
+  .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large {
+    margin-top: 50px;
+  }
+
+  /*  */
 }
 
 /* Computer */
@@ -1688,7 +1738,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
     display: flex !important;
     flex-direction: row !important;
     position: absolute;
-    top: 100px;
+    top: 115px;
     width: 98% !important;
   }
 
@@ -1700,6 +1750,8 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 
   .theComputerNav .woocommerce-product-search button {
     width: 30%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   /*  */
@@ -1817,4 +1869,27 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
     margin-top: 35px !important;
   }
+
+  /* Cart */
+
+  a.cart-contents {
+    text-decoration: none !important;
+    color: black !important;
+    position: absolute !important;
+    right: 50px !important;
+    font-size: 25px !important;
+  }
+
+  .fa-cart-shopping:before,
+  .fa-shopping-cart:before {
+    position: absolute !important;
+    right: 30px !important;
+    top: 0px !important;
+    font-size: 30px !important;
+  }
+
+  .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large {
+    margin-top: 50px;
+  }
+  /*  */
 }

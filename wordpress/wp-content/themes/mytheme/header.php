@@ -21,7 +21,18 @@
                 <?php bloginfo('name') ?>
             </a>
         </h1>
+        <?php global $woocommerce; ?>
 
+        <!-- <div class="the_cart"> -->
+        <!-- <i class="fa-solid fa-cart-shopping"> -->
+        <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
+            <?php echo sprintf(_n('%d item', '%d', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count); ?>
+            <i class="fa-solid fa-cart-shopping">
+            </i>
+        </a>
+        <!-- </i> -->
+
+        <!-- </div> -->
 
         <i onclick="theOpenMenu()" class="fa-solid fa-bars"></i>
 
