@@ -206,32 +206,38 @@
             document.querySelector('.theHamburgerMenu').classList.toggle('youOpen')
             document.querySelector('.thePhoneAccountMeny').classList.remove('openPhoneMenu')
             document.querySelector('.wc-product-categories-list').classList.remove('openCat')
+            document.querySelector('.wc-product-categories').classList.remove('openCat')
         }
 
         function theClose() {
             document.querySelector('.theHamburgerMenu').classList.remove('youOpen')
             document.querySelector('.wc-product-categories-list').classList.remove('openCat')
+            document.querySelector('.wc-product-categories').classList.remove('openCat')
         }
 
         function openAccountMenu() {
             document.querySelector('.theAccountMeny').classList.toggle('openMenu')
             document.querySelector('.wc-product-categories-list').classList.remove('openCat')
+            document.querySelector('.wc-product-categories').classList.remove('openCat')
         }
 
         function openAccountForPhoneMenu() {
             document.querySelector('.thePhoneAccountMeny').classList.toggle('openPhoneMenu')
             document.querySelector('.theHamburgerMenu').classList.remove('youOpen')
             document.querySelector('.wc-product-categories-list').classList.remove('openCat')
+            document.querySelector('.wc-product-categories').classList.remove('openCat')
         }
 
 
         function openCategory() {
             document.querySelector('.wc-product-categories-list').classList.toggle('openCat')
 
+
         }
 
         function openCategoryComputer() {
             document.querySelector('.wc-product-categories').classList.toggle('openCat')
+            document.querySelector('.wc-product-categories-list').classList.remove('openCat')
 
         }
 
