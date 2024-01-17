@@ -50,3 +50,5 @@ function add_coupon_notice()
     }
     wc_clear_notices();
 }
+?>
+

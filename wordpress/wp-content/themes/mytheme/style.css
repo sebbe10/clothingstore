@@ -86,14 +86,17 @@ body {
 }
 
 .theHamburgerMenu {
+  display: flex;
   position: fixed;
   right: 0;
   z-index: 100;
   top: -700px;
   background-color: white;
-  width: auto;
+  width: 35%;
   height: 100vh;
   box-shadow: 0 0.05rem 0.05rem black;
+  flex-direction: column;
+  align-items: center;
 }
 
 .theHamburgerMenu ul {
@@ -123,6 +126,7 @@ body {
   position: fixed;
   z-index: 100;
   top: 0;
+  text-align: center;
 }
 
 .woocommerce-product-search {
@@ -143,6 +147,11 @@ body {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 5px;
+}
+
+.theSearchBottom {
+  position: absolute;
+  bottom: 0;
 }
 /*  */
 
@@ -373,18 +382,6 @@ body {
 .eachCategoryInfo img {
   width: 250px !important;
   height: 250px !important;
-}
-
-.thecategorybutton {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #717171 !important;
-  border-radius: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  border: none;
 }
 
 .eachCategoryInfo a {
@@ -1097,12 +1094,13 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   float: none !important;
 }
 
+/* Ta bort rea skylten*/
 .onsale {
   display: none;
 }
+/*  */
 
 /* Kontakta oss */
-
 .thePhoneAccountMeny
   .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-242,
 .thePhoneAccountMeny
@@ -1149,10 +1147,9 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   a:hover {
   color: darkblue;
 }
-
 /*  */
 
-/*  Empty cart and checkout */
+/*  Empty cart and checkout with products */
 .wc-block-grid__products {
   display: flex !important;
   flex-wrap: wrap;
@@ -1218,7 +1215,6 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 .wc-block-grid__product-link {
   text-decoration: none !important;
 }
-
 /*  */
 
 /* Contact formular */
@@ -1274,7 +1270,6 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   margin: 4px;
   padding: 2px;
 }
-
 /*  */
 
 /* Policy */
@@ -1298,7 +1293,6 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 }
 
 /* Cart */
-
 a.cart-contents {
   text-decoration: none !important;
   color: black !important;
@@ -1325,6 +1319,31 @@ a.cart-contents {
 .stock.out-of-stock {
   font-size: 22px;
 }
+/*  */
+
+/* Ta bort categoryn som jag in te vill ha som inte har något id eller class */
+.wc-product-categories-list li:nth-of-type(3) {
+  display: none;
+}
+
+/* Category */
+.wc-product-categories-list {
+  position: absolute;
+  top: -2000px !important;
+}
+
+.wc-product-categories-list.openCat {
+  position: absolute;
+  top: 200px !important;
+  /* margin-top: 0 !important; */
+}
+
+.theCategoryButton {
+  margin-top: 20px !important;
+  font-size: 25px !important;
+  width: auto;
+}
+
 /*  */
 
 /* Smart Tablet */
@@ -1371,7 +1390,7 @@ a.cart-contents {
   }
 
   .theComputerNav li {
-    font-size: 22px;
+    font-size: 25px;
     list-style: none;
   }
 
@@ -1383,14 +1402,12 @@ a.cart-contents {
   /*  */
 
   /* Startsidans huvud bild */
-
   .wp-image-111 {
     display: flex;
     justify-content: center;
     margin: auto;
     width: 80%;
     height: 350px;
-    /* border: 1px solid black; */
   }
 
   .theStartImg {
@@ -1411,7 +1428,7 @@ a.cart-contents {
 
   /*  */
   /* 
-  Hamburger menyns sträng knapp
+  Hamburger menyns stäng knapp
    */
 
   .fa-solid.fa-x {
@@ -1425,55 +1442,7 @@ a.cart-contents {
 
   /*  */
 
-  /* Själva innehållets design till hamburger menyn och gjort en egen category*/
-
-  /* .theBtnForCategory2 {
-      position: absolute;
-      right: 30px;
-      font-size: 22px;
-      cursor: pointer;
-    }
-  
-    .theBtnForCategory2:hover {
-      color: darkblue;
-    }
-  
-    .theCategoryDiv2 {
-      text-align: center;
-      position: fixed;
-      top: -500px;
-    } */
-
-  /* .theCategoryDiv.openCategory { */
-  /* .theCategoryDiv2.openCategory2 {
-      position: fixed;
-      right: 30px;
-      top: 90px;
-      width: auto;
-      height: auto;
-      margin-top: 50px;
-      background-color: whitesmoke;
-      border: 1px solid black;
-    }
-  
-    .theLI {
-      margin-top: 15px;
-    }
-  
-    .theA {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding-left: 18px;
-    }
-    .theCategoryDiv .theLI:hover {
-      background-color: whitesmoke;
-    } */
-
-  /*  */
-
-  /* Styling till produkterna */
+  /* Styling till produkterna page.php */
 
   .products.columns-4 {
     display: flex !important;
@@ -1591,22 +1560,13 @@ a.cart-contents {
 
   /* Product search */
   .woocommerce-product-search {
-    /* display: flex !important;
-    flex-direction: row !important;
-    position: absolute;
-    top: 125px;
-    height: 100px;
-    align-items: center;
-    width: 98% !important; */
-
     display: flex !important;
     flex-direction: row !important;
     position: absolute;
-    /* top: 70px; */
     height: 100px;
     align-items: center;
     width: 98% !important;
-    margin: 0 !important;
+    margin: 10px !important;
   }
 
   .search-field {
@@ -1764,6 +1724,40 @@ a.cart-contents {
     font-size: 22px;
   }
   /*  */
+
+  /* Meny for smartpad */
+  .theMenyFoSmartAndComputer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  /*  */
+
+  /* Category */
+  .theCategoryButton {
+    margin-top: 0 !important;
+    font-size: 25px !important;
+    width: auto;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .wc-product-categories {
+    position: absolute !important;
+    top: -3000px !important;
+  }
+  .wc-product-categories.openCat {
+    display: flex;
+    position: absolute !important;
+    top: 130px !important;
+    background-color: white;
+    width: 30%;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Computer */

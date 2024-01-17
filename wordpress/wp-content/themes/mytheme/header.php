@@ -22,7 +22,6 @@
             </a>
         </h1>
 
-
         <?php global $woocommerce; ?>
 
         <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
@@ -57,12 +56,54 @@
                 ?>
             </div>
             <!--  -->
+            <div class="theMenyFoSmartAndComputer">
+                <?php
+                wp_nav_menu();
+                ?>
+                <div class="outputCatAndTheButton">
+                    <li class="theCategoryButton" onclick="openCategoryComputer()">Kategory</li>
+                    <!--  -->
+                    <?php
+                    $taxonomy     = 'product_cat';
+                    $orderby      = 'name';
+                    $show_count   = 0;      // 1 for yes, 0 for no
+                    $pad_counts   = 0;      // 1 for yes, 0 for no
+                    $hierarchical = 1;      // 1 for yes, 0 for no
+                    $title        = '';
+                    $empty        = 0;
 
-            <?php
-            wp_nav_menu();
-            ?>
+                    $args = array(
+                        'taxonomy'     => $taxonomy,
+                        'orderby'      => $orderby,
+                        'show_count'   => $show_count,
+                        'pad_counts'   => $pad_counts,
+                        'hierarchical' => $hierarchical,
+                        'title_li'     => $title,
+                        'hide_empty'   => $empty
+                    );
 
+                    $all_categories = get_categories($args);
 
+                    echo '<ul class="wc-product-categories">';
+
+                    foreach ($all_categories as $cat) {
+
+                        if (
+                            $cat->category_parent == 0
+                        ) {
+
+                            $category_id = $cat->term_id;
+
+                            echo '<li><a href="' . get_term_link($cat->slug, 'product_cat') . '">' . $cat->name . '</a></li>';
+                        }
+                    }
+                    ?>
+                    <?php
+                    echo '</ul>';
+                    ?>
+                </div>
+                <!--  -->
+            </div>
 
             <!-- <p class="theBtnForCategory2" onclick="openCategory2()">Kategory</p> -->
             <!-- <div class="theCategoryDiv2"> -->
@@ -74,8 +115,6 @@
             <!-- </div> -->
 
         </div>
-
-
 
 
         <!-- Account menu for phone -->
@@ -106,17 +145,56 @@
             <i onclick="theClose()" class="fa-solid fa-x"></i>
             <?php
             wp_nav_menu();
-            get_product_search_form()
             ?>
 
-            <!-- <p class="theBtnForCategory" onclick="openCategory()">Kategory</p> -->
-            <!-- <div class="theCategoryDiv"> -->
-            <!-- <p class="theCategoryUL"> -->
-            <!-- <li class="theLI"><a class="theA" href="">T-shirt</a></li>
-                <li class="theLI"><a class="theA" href="">Huvtröja</a></li>
-                <li class="theLI"><a class="theA" href="">Mjukisbyxa</a></li> -->
-            <!-- </p> -->
-            <!-- </div> -->
+            <li class="theCategoryButton" onclick="openCategory()">Kategory</li>
+
+
+            <!--  -->
+            <?php
+            $taxonomy     = 'product_cat';
+            $orderby      = 'name';
+            $show_count   = 0;      // 1 for yes, 0 for no
+            $pad_counts   = 0;      // 1 for yes, 0 for no
+            $hierarchical = 1;      // 1 for yes, 0 for no
+            $title        = '';
+            $empty        = 0;
+
+            $args = array(
+                'taxonomy'     => $taxonomy,
+                'orderby'      => $orderby,
+                'show_count'   => $show_count,
+                'pad_counts'   => $pad_counts,
+                'hierarchical' => $hierarchical,
+                'title_li'     => $title,
+                'hide_empty'   => $empty
+            );
+
+            $all_categories = get_categories($args);
+
+            echo '<ul class="wc-product-categories-list">';
+
+            foreach ($all_categories as $cat) {
+
+                if (
+                    $cat->category_parent == 0
+                ) {
+
+                    $category_id = $cat->term_id;
+
+                    echo '<li><a href="' . get_term_link($cat->slug, 'product_cat') . '">' . $cat->name . '</a></li>';
+                }
+            }
+            ?>
+            <?php
+            echo '</ul>';
+            ?>
+            <!--  -->
+            <div class="theSearchBottom">
+                <?php
+                get_product_search_form()
+                ?>
+            </div>
         </div>
     </header>
 
@@ -127,21 +205,37 @@
         function theOpenMenu() {
             document.querySelector('.theHamburgerMenu').classList.toggle('youOpen')
             document.querySelector('.thePhoneAccountMeny').classList.remove('openPhoneMenu')
+            document.querySelector('.wc-product-categories-list').classList.remove('openCat')
         }
 
         function theClose() {
             document.querySelector('.theHamburgerMenu').classList.remove('youOpen')
+            document.querySelector('.wc-product-categories-list').classList.remove('openCat')
         }
 
         function openAccountMenu() {
             document.querySelector('.theAccountMeny').classList.toggle('openMenu')
-
+            document.querySelector('.wc-product-categories-list').classList.remove('openCat')
         }
 
         function openAccountForPhoneMenu() {
             document.querySelector('.thePhoneAccountMeny').classList.toggle('openPhoneMenu')
             document.querySelector('.theHamburgerMenu').classList.remove('youOpen')
+            document.querySelector('.wc-product-categories-list').classList.remove('openCat')
         }
+
+
+        function openCategory() {
+            document.querySelector('.wc-product-categories-list').classList.toggle('openCat')
+
+        }
+
+        function openCategoryComputer() {
+            document.querySelector('.wc-product-categories').classList.toggle('openCat')
+
+        }
+
+
 
         //         let ha = document.querySelector(".thep");
 
