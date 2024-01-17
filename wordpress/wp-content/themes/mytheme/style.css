@@ -442,6 +442,18 @@ body {
   border: none;
 }
 
+.wp-block-button__link.add_to_cart_button {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: auto !important;
+  border-radius: 5px !important;
+  background: black !important;
+  padding: 5px !important;
+  border: none !important;
+}
+
 .theEachButton:hover {
   background-color: black;
 }
@@ -1973,11 +1985,5 @@ a.cart-contents {
       font-size: 22px;
     }
     /*  */
-
-    .wp-block-heading.has-text-align-center.with-empty-cart-icon.wc-block-cart__empty-cart__title:nth-child(
-        1
-      ) {
-      display: none;
-    }
   }
 }
