@@ -1246,7 +1246,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   align-items: center;
   background: white;
   border-radius: 50px;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -1257,7 +1257,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   align-items: center;
   background: white;
   border-radius: 50px;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -1268,7 +1268,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   align-items: center;
   background: white;
   border-radius: 50px;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -1279,7 +1279,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   align-items: center;
   background: white;
   border-radius: 50px;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -1327,8 +1327,11 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 }
 
 .wpcf7-form-control {
+  display: flex;
   margin: 4px;
-  padding: 2px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
 }
 
 .wpcf7 form.sent .wpcf7-response-output {
@@ -1336,6 +1339,34 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   background: green !important;
   color: white !important;
 }
+
+.wpcf7-form-control::placeholder {
+  color: black;
+  font-size: 15px;
+}
+
+.wpcf7 input[type="file"] {
+  cursor: pointer;
+  width: 135px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.wpcf7 input[type="file"]:hover {
+  background-color: gray;
+}
+
+.wpcf7-list-item-label a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.wpcf7-list-item-label a:hover {
+  color: darkblue;
+  text-decoration: 2px underline black;
+}
+
 /*  */
 
 /* Policy */
