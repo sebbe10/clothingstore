@@ -1421,7 +1421,7 @@ a.cart-contents {
 }
 /*  */
 
-/* Ta bort categoryn som jag in te vill ha som inte har något id eller class */
+/* Ta bort categoryn som jag inte vill ha som inte har något id eller class */
 .wc-product-categories-list li:nth-of-type(3) {
   display: none;
 }
@@ -1460,23 +1460,29 @@ a.cart-contents {
 
 /* Produkt tillagd i kassan*/
 
-.wc-block-cart-items__row {
-  display: flex !important;
+/* .wc-block-cart-items__row { */
+/* display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
   text-align: center !important;
   width: 50% !important;
   border: 1px solid black;
-  margin: auto !important;
-}
+  margin: auto !important; */
 
+/* display: flex !important;
+  flex-direction: row !important;
+  width: 80% !important; */
+
+/* display: flex !important;
+  flex-direction: row;
+  width: 100% !important;
+  flex-wrap: wrap; */
+/* } */
+/* 
 .wc-block-components-product-name {
   font-size: 18px !important;
 }
 
-.wc-block-cart-item__image img {
-  width: 200px !important;
-}
 
 .wc-block-cart-item__product {
   font-size: 28px !important;
@@ -1507,7 +1513,105 @@ a.cart-contents {
   text-align: center !important;
   margin: auto !important;
 }
+*/
+.wc-block-cart__submit-container.wc-block-cart__submit-container--sticky {
+  display: none;
+}
 
+/*  */
+
+/*  */
+.wc-block-cart-items__row {
+  display: flex !important;
+  flex-direction: row !important;
+
+  display: flex !important;
+  flex-direction: row;
+  width: 100% !important;
+
+  /* display: flex !important; */
+  /* flex-direction: row; */
+  /* width: 100% !important; */
+  /* flex-wrap: wrap; */
+}
+
+table.wc-block-cart-items
+  .wc-block-cart-items__row
+  .wc-block-cart-item__image
+  img {
+  width: 200px !important;
+}
+
+.wc-block-cart-item__image {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  width: 200px !important;
+}
+
+.wc-block-cart-item__product {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: start !important;
+}
+
+.wc-block-components-product-name {
+  margin: auto !important;
+}
+
+.wc-block-cart-item__prices {
+  text-align: center !important;
+}
+
+.wc-block-components-product-metadata {
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.wc-block-cart-item__quantity {
+  /* border: 1px solid black !important; */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: auto !important;
+  padding: 0 !important;
+}
+
+.wc-block-cart-item__remove-link {
+  margin: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* .wc-block-cart-item__total { */
+/* padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: end !important; */
+/* } */
+
+.wc-block-cart-item__total-price-and-sale-badge-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: auto !important;
+}
+
+.wc-block-formatted-money-amount.wc-block-components-formatted-money-amount.wc-block-components-product-price__value {
+  margin: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
 /*  */
 
 /* Smart Tablet */
