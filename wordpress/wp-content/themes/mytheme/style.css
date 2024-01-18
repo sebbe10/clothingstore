@@ -129,24 +129,29 @@ body {
   text-align: center;
 }
 
-.woocommerce-product-search {
+.productsearchforphone .woocommerce-product-search {
   display: flex;
-  flex-direction: column;
-  margin: 10px;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  align-items: end;
 }
 
-#woocommerce-product-search-field-1 {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
+.search-field {
+  width: 100% !important;
+  height: 25px !important;
 }
-
 .woocommerce-product-search button {
   background: darkgreen;
   color: white;
   border: none;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  padding: 5px;
+  height: 25px;
+  width: 25%;
+  cursor: pointer;
+}
+
+.woocommerce-product-search button:hover {
+  background-color: lightgreen;
 }
 
 .theSearchBottom {
@@ -617,16 +622,16 @@ body {
 
 .theReviewButton {
   padding: 10px;
-  background-color: cornflowerblue !important;
-  color: white !important;
+  background-color: rgba(211, 211, 211, 0.321) !important;
+  color: black !important;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .theReviewButton.youactive {
-  background-color: #6495ed9c !important;
-  color: white !important;
+  background-color: lightgrey !important;
+  color: bl !important;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -634,16 +639,17 @@ body {
 
 .theShowCommentsButton {
   padding: 10px;
-  background-color: #6495ed9c !important;
-  color: white !important;
+  background-color: lightgrey !important;
+  color: black !important;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .theShowCommentsButton.youactive {
-  background-color: cornflowerblue !important;
-  color: white !important;
+  /* background-color: lightgrey !important; */
+  background-color: rgba(211, 211, 211, 0.321) !important;
+  color: black !important;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -892,36 +898,37 @@ p.price {
 }
 
 .description_tab {
-  background-color: cornflowerblue !important;
-  color: white !important;
+  background-color: rgba(211, 211, 211, 0.321) !important;
+  color: black !important;
   width: 80%;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .description_tab.active {
-  background-color: #6495ed9c !important;
+  background-color: lightgrey !important;
+  color: black !important;
   width: 80%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.description_tab a {
+  color: black !important;
+  width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .description_tab.active a {
   width: 100% !important;
-  color: white !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.description_tab a {
-  color: white !important;
-  width: 100% !important;
+  color: black !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .additional_information_tab {
-  background-color: cornflowerblue !important;
+  background-color: rgba(211, 211, 211, 0.321) !important;
   color: white !important;
   width: 80%;
   margin: 0 !important;
@@ -929,22 +936,22 @@ p.price {
 }
 
 .additional_information_tab a {
-  color: white !important;
+  color: black !important;
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .additional_information_tab.active {
-  background-color: #6495ed9c !important;
-  color: white !important;
+  background-color: lightgrey !important;
+  color: black !important;
   width: 80%;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .additional_information_tab.active a {
-  color: white !important;
+  color: black !important;
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -1068,6 +1075,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   color: black !important;
   font-size: 18px !important;
   text-decoration: none;
+  width: 45px;
 }
 
 .reset_variations:hover {
@@ -1231,36 +1239,74 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 /*  */
 
 /* Contact formular */
-.wpcf7-form.init {
+.wpcf7-form.init,
+.wpcf7-form.init p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
+  border-radius: 50px;
+  width: 80%;
+  margin: auto;
 }
 
-.wpcf7-form.submitting {
+.wpcf7-form.resetting,
+.wpcf7-form.resetting p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
+  border-radius: 50px;
+  width: 80%;
+  margin: auto;
 }
 
-.wpcf7-form.invalid {
+.wpcf7-form.submitting,
+.wpcf7-form.submitting p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
+  border-radius: 50px;
+  width: 80%;
+  margin: auto;
+}
+
+.wpcf7-form.invalid,
+.wpcf7-form.invalid p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  width: 80%;
+  margin: auto;
 }
 
 .wpcf7-form-control.wpcf7-submit.has-spinner {
-  padding: 0px 133px;
   display: flex;
+  width: 300px;
+  justify-content: center;
+  border-radius: 50px;
+  border: none;
+  background: darkgreen;
+  color: white;
+  cursor: pointer;
 }
 
-.wpcf7-form.failed {
+.wpcf7-form-control.wpcf7-submit.has-spinner:hover {
+  background-color: lightgreen;
+}
+
+.wpcf7-form.failed,
+.wpcf7-form.failed p {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.wpcf7-form.sent {
+.wpcf7-form.sent,
+.wpcf7-form.sent p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1270,7 +1316,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 .wp-block-heading {
   font-size: 30px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .wpcf7-form.init p {
@@ -1282,6 +1328,12 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 .wpcf7-form-control {
   margin: 4px;
   padding: 2px;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: white !important;
+  background: green !important;
+  color: white !important;
 }
 /*  */
 
@@ -1361,6 +1413,66 @@ a.cart-contents {
 .youClickCat {
   text-decoration: none;
 }
+/*  */
+
+/* Din varukorg är tom med smile */
+
+.wp-block-heading.has-text-align-center.with-empty-cart-icon.wc-block-cart__empty-cart__title {
+  margin-top: 50px;
+}
+
+/*  */
+
+/* Produkt tillagd i kassan*/
+
+.wc-block-cart-items__row {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 50% !important;
+  border: 1px solid black;
+  margin: auto !important;
+}
+
+.wc-block-components-product-name {
+  font-size: 18px !important;
+}
+
+.wc-block-cart-item__image img {
+  width: 200px !important;
+}
+
+.wc-block-cart-item__product {
+  font-size: 28px !important;
+}
+
+.wc-block-cart-items__header {
+  display: none;
+}
+
+.wc-block-cart-item__wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.wc-block-components-product-details {
+  display: flex;
+  gap: 10px;
+}
+
+.wc-block-cart-item__quantity {
+  display: flex;
+}
+
+.wc-block-cart-item__total {
+  font-size: 35px !important;
+  text-align: center !important;
+  margin: auto !important;
+}
+
 /*  */
 
 /* Smart Tablet */
@@ -1598,7 +1710,7 @@ a.cart-contents {
 
   .woocommerce-product-search button {
     width: 25%;
-    height: 35px;
+    height: 25px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -1803,187 +1915,191 @@ a.cart-contents {
     margin-top: 50px;
   }
 
+  .productsearchforphone .woocommerce-product-search {
+    display: none !important;
+  }
+}
+
+/*  */
+
+/* Computer */
+@media screen and (min-width: 1200px) {
+  .theComputerNav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  /* Product search */
+
+  .theComputerNav .woocommerce-product-search {
+    display: flex !important;
+    flex-direction: row !important;
+    position: absolute;
+    /* top: 115px; */
+    height: 100px;
+    width: 98% !important;
+    align-items: center;
+  }
+
+  .theComputerNav .search-field {
+    width: 100%;
+    font-size: 20px;
+    height: 35px;
+    font-family: Arial;
+  }
+
+  .theComputerNav .woocommerce-product-search button {
+    width: 25%;
+    height: 35px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
   /*  */
 
-  /* Computer */
-  @media screen and (min-width: 1200px) {
-    .theComputerNav ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 50px;
-    }
-
-    /* Product search */
-
-    .theComputerNav .woocommerce-product-search {
-      display: flex !important;
-      flex-direction: row !important;
-      position: absolute;
-      /* top: 115px; */
-      height: 100px;
-      width: 98% !important;
-      align-items: center;
-    }
-
-    .theComputerNav .search-field {
-      width: 100%;
-      font-size: 20px;
-      height: 35px;
-      font-family: Arial;
-    }
-
-    .theComputerNav .woocommerce-product-search button {
-      width: 25%;
-      height: 35px;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-
-    /*  */
-
-    /* Produkter */
-    .products .product {
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: center !important;
-      align-items: center !important;
-      text-align: center !important;
-      width: 300px !important;
-      height: 400px !important;
-      border-radius: 5px;
-      padding-left: 10px !important;
-      padding-right: 10px !important;
-      padding-top: 10px !important;
-      padding-bottom: 10px !important;
-      /* margin-top: 70px !important; */
-    }
-    /* Footern där information finns om hur man kontaktar */
-    .theFooter {
-      display: flex;
-      flex-direction: row;
-      height: 100px;
-      width: 100%;
-      background-color: lightgray;
-      color: black;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      margin-top: 100px;
-    }
-
-    /* Footern där information finns om hur man kontaktar */
-    .theFooter {
-      display: flex;
-      flex-direction: row;
-      height: 100px;
-      width: 100%;
-      background-color: lightgray;
-      color: black;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      margin-top: 100px;
-    }
-    /*  */
-
-    /* Paypal design */
-
-    /*  */
-
-    /* Account meny for users */
-    .theAccountMeny {
-      position: fixed;
-      left: 1500px;
-      z-index: 100;
-      width: 25%;
-    }
-
-    .theAccountMeny ul {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .theAccountMeny.openMenu {
-      position: absolute;
-      left: 0;
-      z-index: 100;
-    }
-
-    .woocommerce-ordering .orderby {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: auto;
-      width: 100%;
-      height: auto;
-      text-align: center;
-      border-radius: 5px;
-      background: whitesmoke;
-      color: black;
-      font-size: 15px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border: none;
-      cursor: pointer;
-    }
-    /*  */
-
-    /* Empty cart */
-    img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
-      width: 250px !important;
-      height: 250px !important;
-    }
-    /*  */
-
-    /* Betalnings method */
-    .paymethod {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    /*  */
-
-    .single-product {
-      margin-top: 50px;
-    }
-
-    .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
-      margin-top: 35px !important;
-    }
-
-    /* Cart */
-
-    a.cart-contents {
-      text-decoration: none !important;
-      color: black !important;
-      position: absolute !important;
-      right: 50px !important;
-      font-size: 25px !important;
-    }
-
-    .fa-cart-shopping:before,
-    .fa-shopping-cart:before {
-      position: absolute !important;
-      right: 30px !important;
-      top: 0px !important;
-      font-size: 30px !important;
-    }
-
-    .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large {
-      margin-top: 50px;
-    }
-    /*  */
-
-    /* Slut i lager */
-    .stock.out-of-stock {
-      font-size: 22px;
-    }
-    /*  */
+  /* Produkter */
+  .products .product {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 300px !important;
+    height: 400px !important;
+    border-radius: 5px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    /* margin-top: 70px !important; */
   }
+  /* Footern där information finns om hur man kontaktar */
+  .theFooter {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  /* Footern där information finns om hur man kontaktar */
+  .theFooter {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+  }
+  /*  */
+
+  /* Paypal design */
+
+  /*  */
+
+  /* Account meny for users */
+  .theAccountMeny {
+    position: fixed;
+    left: 1500px;
+    z-index: 100;
+    width: 25%;
+  }
+
+  .theAccountMeny ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .theAccountMeny.openMenu {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+  }
+
+  .woocommerce-ordering .orderby {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: black;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  /*  */
+
+  /* Empty cart */
+  img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  /*  */
+
+  /* Betalnings method */
+  .paymethod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*  */
+
+  .single-product {
+    margin-top: 50px;
+  }
+
+  .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
+    margin-top: 35px !important;
+  }
+
+  /* Cart */
+
+  a.cart-contents {
+    text-decoration: none !important;
+    color: black !important;
+    position: absolute !important;
+    right: 50px !important;
+    font-size: 25px !important;
+  }
+
+  .fa-cart-shopping:before,
+  .fa-shopping-cart:before {
+    position: absolute !important;
+    right: 30px !important;
+    top: 0px !important;
+    font-size: 30px !important;
+  }
+
+  .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large {
+    margin-top: 50px;
+  }
+  /*  */
+
+  /* Slut i lager */
+  .stock.out-of-stock {
+    font-size: 22px;
+  }
+  /*  */
 }

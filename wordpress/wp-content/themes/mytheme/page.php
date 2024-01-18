@@ -24,8 +24,6 @@
             echo '<p>This is a <strong>custom</strong> description added programmatically.</p>';
         }
     });
-
-    is_product_category();
     ?>
     <?php get_footer() ?>
 

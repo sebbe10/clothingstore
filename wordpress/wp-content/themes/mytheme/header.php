@@ -32,6 +32,12 @@
 
         <i onclick="theOpenMenu()" class="fa-solid fa-bars"></i>
 
+        <div class="productsearchforphone">
+            <?php
+            get_product_search_form()
+            ?>
+        </div>
+
         <div class="theComputerNav">
             <?php
             get_product_search_form();
@@ -190,13 +196,10 @@
             echo '</ul>';
             ?>
             <!--  -->
-            <div class="theSearchBottom">
-                <?php
-                get_product_search_form()
-                ?>
-            </div>
+
         </div>
     </header>
+
 
 
     <!-- <p class="thep">Bild1</p> -->
@@ -240,7 +243,6 @@
             document.querySelector('.wc-product-categories-list').classList.remove('openCat')
 
         }
-
 
 
         //         let ha = document.querySelector(".thep");
