@@ -1286,6 +1286,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 .wpcf7-form-control.wpcf7-submit.has-spinner {
   display: flex;
   width: 300px;
+  height: 35px;
   justify-content: center;
   border-radius: 50px;
   border: none;
@@ -1340,7 +1341,10 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 /* Policy */
 .thepolicy {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 /*  */
 
