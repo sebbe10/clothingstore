@@ -1523,16 +1523,9 @@ a.cart-contents {
 /*  */
 .wc-block-cart-items__row {
   display: flex !important;
-  flex-direction: row !important;
-
-  display: flex !important;
   flex-direction: row;
   width: 100% !important;
-
-  /* display: flex !important; */
-  /* flex-direction: row; */
-  /* width: 100% !important; */
-  /* flex-wrap: wrap; */
+  border: 1px solid black;
 }
 
 table.wc-block-cart-items
@@ -1558,6 +1551,7 @@ table.wc-block-cart-items
 
 .wc-block-components-product-name {
   margin: auto !important;
+  font-size: 18px !important;
 }
 
 .wc-block-cart-item__prices {
