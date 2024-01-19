@@ -45,7 +45,9 @@
 
             <!-- Account menu -->
 
-            <i onclick="openAccountMenu()" class="fa-regular fa-user"></i>
+            <!-- <i onclick="openAccountMenu()" class="fa-regular fa-user"></i> -->
+            <!-- <i onclick="openAccountForPhoneMenu()" class="fa-solid fa-user"></i> -->
+
             <div class="theAccountMeny">
                 <?php
                 if (get_the_title() !== 'Login' && get_the_title() !== 'Mitt Konto' && get_the_title() !== 'User' && get_the_title() !== 'Members' && get_the_title() !== 'Register' && get_the_title() !== 'Logout') {

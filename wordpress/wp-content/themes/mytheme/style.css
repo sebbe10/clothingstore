@@ -320,7 +320,7 @@ body {
 .theFooter {
   display: flex;
   flex-direction: row;
-  height: 100px;
+  height: auto;
   width: 100%;
   background-color: lightgray;
   color: black;
@@ -507,7 +507,7 @@ body {
   font-size: 40px;
   cursor: pointer;
   position: absolute !important;
-  top: 60px;
+  top: 55px;
 }
 
 .thePhoneAccountMeny {
@@ -1460,60 +1460,12 @@ a.cart-contents {
 
 /* Produkt tillagd i kassan*/
 
-/* .wc-block-cart-items__row { */
-/* display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  text-align: center !important;
-  width: 50% !important;
-  border: 1px solid black;
-  margin: auto !important; */
-
-/* display: flex !important;
-  flex-direction: row !important;
-  width: 80% !important; */
-
-/* display: flex !important;
-  flex-direction: row;
-  width: 100% !important;
-  flex-wrap: wrap; */
-/* } */
-/* 
-.wc-block-components-product-name {
-  font-size: 18px !important;
-}
-
-
-.wc-block-cart-item__product {
-  font-size: 28px !important;
-}
-
-.wc-block-cart-items__header {
-  display: none;
-}
-
-.wc-block-cart-item__wrap {
+.wc-block-cart-items.wp-block-woocommerce-cart-line-items-block {
   display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-
-.wc-block-components-product-details {
-  display: flex;
-  gap: 10px;
-}
-
-.wc-block-cart-item__quantity {
-  display: flex;
-}
-
-.wc-block-cart-item__total {
-  font-size: 35px !important;
-  text-align: center !important;
+  width: 90% !important;
   margin: auto !important;
 }
-*/
+
 .wc-block-cart__submit-container.wc-block-cart__submit-container--sticky {
   display: none;
 }
@@ -1525,7 +1477,12 @@ a.cart-contents {
   display: flex !important;
   flex-direction: row;
   width: 100% !important;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0 0.05rem 0.05rem black;
+}
+
+.wc-block-cart-items__row .wc-block-cart-item__total {
+  position: absolute;
 }
 
 table.wc-block-cart-items
@@ -1540,6 +1497,11 @@ table.wc-block-cart-items
   flex-direction: column !important;
   justify-content: center !important;
   width: 200px !important;
+  margin-top: 50px !important;
+}
+
+.wc-block-cart-item__image a {
+  margin-top: 50px !important;
 }
 
 .wc-block-cart-item__product {
@@ -1552,6 +1514,8 @@ table.wc-block-cart-items
 .wc-block-components-product-name {
   margin: auto !important;
   font-size: 18px !important;
+  color: black;
+  text-decoration: none;
 }
 
 .wc-block-cart-item__prices {
@@ -1562,49 +1526,89 @@ table.wc-block-cart-items
   margin: 0 !important;
   display: flex !important;
   flex-direction: column !important;
-  align-items: center !important;
 }
 
 .wc-block-cart-item__quantity {
-  /* border: 1px solid black !important; */
   display: flex !important;
   flex-direction: column !important;
-  align-items: center !important;
   justify-content: center !important;
   height: auto !important;
   padding: 0 !important;
 }
 
 .wc-block-cart-item__remove-link {
-  margin: auto !important;
   display: flex !important;
-  justify-content: center !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  text-align: center !important;
+  align-items: none !important;
+  font-size: 20px !important;
+  text-decoration: none !important;
 }
 
-/* .wc-block-cart-item__total { */
-/* padding: 0 !important;
-  margin: 0 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: end !important; */
-/* } */
-
-.wc-block-cart-item__total-price-and-sale-badge-wrapper {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin: auto !important;
+.wc-block-cart-item__remove-link:hover {
+  color: darkblue !important;
+  text-decoration: 1px underline black;
 }
 
 .wc-block-formatted-money-amount.wc-block-components-formatted-money-amount.wc-block-components-product-price__value {
-  margin: auto !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
+  align-items: start !important;
+}
+
+.wc-block-cart-item__total {
+  font-size: 30px !important;
+}
+
+.wc-block-cart-item__total {
+  display: flex;
+  align-items: center;
+}
+
+.wc-block-cart table.wc-block-cart-items td {
+  margin: 0 !important;
+}
+/*  */
+
+/* Style user */
+
+.um-cover.um-trigger-menu-on-click {
+  display: none !important;
+}
+
+.um.um-profile.um-viewing.um-155 {
+  margin-top: 100px !important;
+}
+
+.um-profile-meta {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: row;
+  padding: 0px 20px !important;
+}
+
+.gravatar {
+  display: none !important;
+}
+
+.um-profile-photo-img {
+  display: none !important;
+}
+
+.wc-block-cart-items__header {
+  display: flex !important;
+  position: absolute !important;
+  flex-direction: row-reverse;
+  gap: 25px;
+  font-size: 20px !important;
+  top: -3px !important;
+}
+/*  */
+
+/* avatar avatar-190 um-avatar um-avatar-default */
+
+#menu-meny2 li:nth-of-type(1),
+#menu-meny2 li:nth-of-type(2) {
+  display: none;
 }
 /*  */
 
@@ -1633,6 +1637,7 @@ table.wc-block-cart-items
     color: black;
     text-decoration: none;
   }
+
   /*  */
 
   /* Nav med alla länkar till sidorna */
@@ -1872,7 +1877,7 @@ table.wc-block-cart-items
   /* Account meny for users */
 
   .fa-solid.fa-user {
-    display: none;
+    display: flex;
   }
 
   .fa-regular.fa-user {
@@ -2051,188 +2056,198 @@ table.wc-block-cart-items
   .productsearchforphone .woocommerce-product-search {
     display: none !important;
   }
-}
 
-/*  */
-
-/* Computer */
-@media screen and (min-width: 1200px) {
-  .theComputerNav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-  }
-
-  /* Product search */
-
-  .theComputerNav .woocommerce-product-search {
-    display: flex !important;
-    flex-direction: row !important;
-    position: absolute;
-    /* top: 115px; */
-    height: 100px;
-    width: 98% !important;
-    align-items: center;
-  }
-
-  .theComputerNav .search-field {
-    width: 100%;
-    font-size: 20px;
-    height: 35px;
-    font-family: Arial;
-  }
-
-  .theComputerNav .woocommerce-product-search button {
-    width: 25%;
-    height: 35px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  /*  */
-
-  /* Produkter */
-  .products .product {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    text-align: center !important;
-    width: 300px !important;
-    height: 400px !important;
-    border-radius: 5px;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    /* margin-top: 70px !important; */
-  }
-  /* Footern där information finns om hur man kontaktar */
-  .theFooter {
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    width: 100%;
-    background-color: lightgray;
-    color: black;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 100px;
-  }
-
-  /* Footern där information finns om hur man kontaktar */
-  .theFooter {
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    width: 100%;
-    background-color: lightgray;
-    color: black;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 100px;
-  }
-  /*  */
-
-  /* Paypal design */
-
-  /*  */
-
-  /* Account meny for users */
-  .theAccountMeny {
-    position: fixed;
-    left: 1500px;
-    z-index: 100;
-    width: 25%;
-  }
-
-  .theAccountMeny ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .theAccountMeny.openMenu {
-    position: absolute;
-    left: 0;
-    z-index: 100;
-  }
-
-  .woocommerce-ordering .orderby {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    border-radius: 5px;
-    background: whitesmoke;
-    color: black;
-    font-size: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: none;
-    cursor: pointer;
-  }
-  /*  */
-
-  /* Empty cart */
-  img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
-    width: 250px !important;
-    height: 250px !important;
-  }
-  /*  */
-
-  /* Betalnings method */
-  .paymethod {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  /*  */
-
-  .single-product {
+  /* Flytta ner info i kassa */
+  .wc-block-components-sidebar-layout.wc-block-checkout.is-large {
     margin-top: 50px;
   }
 
-  .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
-    margin-top: 35px !important;
-  }
-
-  /* Cart */
-
-  a.cart-contents {
-    text-decoration: none !important;
-    color: black !important;
-    position: absolute !important;
-    right: 50px !important;
-    font-size: 25px !important;
-  }
-
-  .fa-cart-shopping:before,
-  .fa-shopping-cart:before {
-    position: absolute !important;
-    right: 30px !important;
-    top: 0px !important;
-    font-size: 30px !important;
-  }
-
-  .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large {
-    margin-top: 50px;
-  }
   /*  */
 
-  /* Slut i lager */
-  .stock.out-of-stock {
-    font-size: 22px;
+  /* Computer */
+  @media screen and (min-width: 1200px) {
+    .theComputerNav ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    /* Product search */
+
+    .theComputerNav .woocommerce-product-search {
+      display: flex !important;
+      flex-direction: row !important;
+      position: absolute;
+      /* top: 115px; */
+      height: 100px;
+      width: 98% !important;
+      align-items: center;
+    }
+
+    .theComputerNav .search-field {
+      width: 100%;
+      font-size: 20px;
+      height: 35px;
+      font-family: Arial;
+    }
+
+    .theComputerNav .woocommerce-product-search button {
+      width: 25%;
+      height: 25px !important;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    /*  */
+
+    /* Produkter */
+    .products .product {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center !important;
+      width: 300px !important;
+      height: 400px !important;
+      border-radius: 5px;
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+      /* margin-top: 70px !important; */
+    }
+    /* Footern där information finns om hur man kontaktar */
+    .theFooter {
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+      width: 100%;
+      background-color: lightgray;
+      color: black;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 100px;
+    }
+
+    /* Footern där information finns om hur man kontaktar */
+    .theFooter {
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+      width: 100%;
+      background-color: lightgray;
+      color: black;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 100px;
+    }
+    /*  */
+
+    /* Paypal design */
+
+    /*  */
+
+    /* Account meny for users */
+    .theAccountMeny {
+      position: fixed;
+      left: 1500px;
+      z-index: 100;
+      width: 25%;
+    }
+
+    .theAccountMeny ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .theAccountMeny.openMenu {
+      position: absolute;
+      left: 0;
+      z-index: 100;
+    }
+
+    .woocommerce-ordering .orderby {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      border-radius: 5px;
+      background: whitesmoke;
+      color: black;
+      font-size: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    /*  */
+
+    /* Empty cart */
+    img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+      width: 250px !important;
+      height: 250px !important;
+    }
+    /*  */
+
+    /* Betalnings method */
+    .paymethod {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /*  */
+
+    .single-product {
+      margin-top: 50px;
+    }
+
+    .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
+      margin-top: 35px !important;
+    }
+
+    /* Cart */
+
+    a.cart-contents {
+      text-decoration: none !important;
+      color: black !important;
+      position: absolute !important;
+      right: 50px !important;
+      font-size: 25px !important;
+    }
+
+    .fa-cart-shopping:before,
+    .fa-shopping-cart:before {
+      position: absolute !important;
+      right: 30px !important;
+      top: 0px !important;
+      font-size: 30px !important;
+    }
+
+    .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large {
+      margin-top: 50px;
+    }
+    /*  */
+
+    /* Slut i lager */
+    .stock.out-of-stock {
+      font-size: 22px;
+    }
+
+    /* Flytta ner info i kassa */
+    .wc-block-components-sidebar-layout.wc-block-checkout.is-large {
+      margin-top: 50px !important;
+    }
+    /*  */
   }
-  /*  */
 }
