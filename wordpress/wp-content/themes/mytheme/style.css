@@ -1396,6 +1396,10 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   justify-content: center;
   align-items: center;
 }
+
+.wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block {
+  width: 80% !important;
+}
 /*  */
 
 .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
@@ -1676,6 +1680,7 @@ table.wc-block-cart-items
 .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block {
   margin-top: 30px !important;
 }
+
 /*  */
 
 /* Smart Tablet */
@@ -1946,14 +1951,14 @@ table.wc-block-cart-items
     display: flex;
   }
 
-  .fa-regular.fa-user {
+  /* .fa-regular.fa-user {
     position: absolute;
     font-size: 40px;
     top: 55px !important;
     left: 50px;
     cursor: pointer;
     z-index: 100;
-  }
+  } */
 
   .theAccountMeny {
     position: absolute !important ;
@@ -2013,12 +2018,38 @@ table.wc-block-cart-items
   /*  */
 
   /* Betalnings method */
+
+  .wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block {
+    background-color: white;
+    border-radius: 0 !important;
+    margin: auto;
+    margin-top: 20px;
+  }
+
   .paymethod {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
+  .wp-block-woocommerce-cart-order-summary-heading-block.wc-block-cart__totals-title {
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+
+  .wp-block-woocommerce-cart-order-summary-subtotal-block.wc-block-components-totals-wrapper {
+    font-size: 20px !important;
+  }
+
+  .wc-block-components-totals-item {
+    font-size: 20px !important;
+  }
+
+  .wc-block-cart__submit.wp-block-woocommerce-proceed-to-checkout-block {
+    margin: 0 !important;
+  }
+
   /*  */
 
   .single-product {
@@ -2048,6 +2079,10 @@ table.wc-block-cart-items
 
   .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large {
     margin-top: 50px;
+  }
+
+  .wc-block-components-sidebar {
+    padding-left: 0 !important;
   }
 
   /*  */
@@ -2127,6 +2162,12 @@ table.wc-block-cart-items
   .wc-block-components-sidebar-layout.wc-block-checkout.is-large {
     margin-top: 50px;
   }
+
+  /* Flytta ner info i varukorg och fixa produkt style i varukorgen */
+  .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block {
+    margin-top: 50px !important;
+  }
+  /*  */
 
   /*  */
 
