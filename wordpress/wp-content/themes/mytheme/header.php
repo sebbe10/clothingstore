@@ -32,6 +32,58 @@
 
         <i onclick="theOpenMenu()" class="fa-solid fa-bars"></i>
 
+        <div class="theHamburgerMenu">
+            <i onclick="theClose()" class="fa-solid fa-x"></i>
+            <?php
+            wp_nav_menu();
+            ?>
+
+            <li class="theCategoryButton" onclick="openCategory()">Kategory</li>
+
+
+            <!--  -->
+            <?php
+            $taxonomy     = 'product_cat';
+            $orderby      = 'name';
+            $show_count   = 0;      // 1 for yes, 0 for no
+            $pad_counts   = 0;      // 1 for yes, 0 for no
+            $hierarchical = 1;      // 1 for yes, 0 for no
+            $title        = '';
+            $empty        = 0;
+
+            $args = array(
+                'taxonomy'     => $taxonomy,
+                'orderby'      => $orderby,
+                'show_count'   => $show_count,
+                'pad_counts'   => $pad_counts,
+                'hierarchical' => $hierarchical,
+                'title_li'     => $title,
+                'hide_empty'   => $empty
+            );
+
+            $all_categories = get_categories($args);
+
+            echo '<ul class="wc-product-categories-list">';
+
+            foreach ($all_categories as $cat) {
+
+                if (
+                    $cat->category_parent == 0
+                ) {
+
+                    $category_id = $cat->term_id;
+
+                    echo '<li><a href="' . get_term_link($cat->slug, 'product_cat') . '">' . $cat->name . '</a></li>';
+                }
+            }
+            ?>
+            <?php
+            echo '</ul>';
+            ?>
+            <!--  -->
+
+        </div>
+
         <div class="productsearchforphone">
             <?php
             get_product_search_form()
@@ -149,57 +201,9 @@
         </div>
         <!--  -->
 
-        <div class="theHamburgerMenu">
-            <i onclick="theClose()" class="fa-solid fa-x"></i>
-            <?php
-            wp_nav_menu();
-            ?>
-
-            <li class="theCategoryButton" onclick="openCategory()">Kategory</li>
 
 
-            <!--  -->
-            <?php
-            $taxonomy     = 'product_cat';
-            $orderby      = 'name';
-            $show_count   = 0;      // 1 for yes, 0 for no
-            $pad_counts   = 0;      // 1 for yes, 0 for no
-            $hierarchical = 1;      // 1 for yes, 0 for no
-            $title        = '';
-            $empty        = 0;
 
-            $args = array(
-                'taxonomy'     => $taxonomy,
-                'orderby'      => $orderby,
-                'show_count'   => $show_count,
-                'pad_counts'   => $pad_counts,
-                'hierarchical' => $hierarchical,
-                'title_li'     => $title,
-                'hide_empty'   => $empty
-            );
-
-            $all_categories = get_categories($args);
-
-            echo '<ul class="wc-product-categories-list">';
-
-            foreach ($all_categories as $cat) {
-
-                if (
-                    $cat->category_parent == 0
-                ) {
-
-                    $category_id = $cat->term_id;
-
-                    echo '<li><a href="' . get_term_link($cat->slug, 'product_cat') . '">' . $cat->name . '</a></li>';
-                }
-            }
-            ?>
-            <?php
-            echo '</ul>';
-            ?>
-            <!--  -->
-
-        </div>
     </header>
 
 
@@ -236,16 +240,16 @@
 
         function openCategory() {
             document.querySelector('.wc-product-categories-list').classList.toggle('openCat')
-
-
         }
 
         function openCategoryComputer() {
             document.querySelector('.wc-product-categories').classList.toggle('openCat')
             document.querySelector('.wc-product-categories-list').classList.remove('openCat')
-
         }
 
+        // function openMenuAndRemove() {
+        //     document.querySelector('.fa-solid fa-bars').classList.toggle('oopen')
+        // }
 
         //         let ha = document.querySelector(".thep");
 

@@ -55,12 +55,12 @@ body {
 
 /* Hamburgeermeny knappen */
 .fa-solid.fa-bars {
-  right: 0;
   font-size: 40px;
   cursor: pointer;
-  position: fixed !important;
-  top: 60px;
   z-index: 100;
+  display: inline;
+  position: absolute;
+  right: 0;
 }
 
 /*  */
@@ -68,13 +68,22 @@ body {
   Hamburger menyns sträng knapp
    */
 
+.isClose {
+  height: 100px;
+}
 .fa-solid.fa-x {
   color: darkred;
-  top: 60px;
+  top: 75px;
   position: absolute;
   right: 0;
   font-size: 40px;
   cursor: pointer;
+  /* 
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 }
 
 /*  */
@@ -1473,7 +1482,6 @@ a.cart-contents {
 .wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block {
   background-color: white;
   border-radius: 25px;
-  width: 90% !important;
   margin: auto;
   margin-top: 20px;
 }
@@ -1504,10 +1512,12 @@ a.cart-contents {
   background: lightgray;
   color: white;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained.wc-block-components-button--loading {
   background-color: gray;
+  border-radius: 4px;
 }
 
 /*  */
@@ -1606,6 +1616,7 @@ table.wc-block-cart-items
 .wc-block-cart table.wc-block-cart-items td {
   margin: 0 !important;
 }
+
 /*  */
 
 /* Style user */
@@ -1660,6 +1671,10 @@ table.wc-block-cart-items
 #menu-meny2 li:nth-of-type(1),
 #menu-meny2 li:nth-of-type(2) {
   display: none;
+}
+
+.wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block {
+  margin-top: 30px !important;
 }
 /*  */
 
