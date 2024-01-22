@@ -1398,7 +1398,19 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 }
 
 .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block {
-  width: 80% !important;
+  width: 90% !important;
+}
+
+.wp-block-woocommerce-cart-order-summary-subtotal-block.wc-block-components-totals-wrapper {
+  font-size: 20px;
+}
+
+.wp-block-woocommerce-cart-order-summary-shipping-block.wc-block-components-totals-wrapper {
+  font-size: 20px;
+}
+
+.wc-block-components-totals-wrapper {
+  font-size: 20px;
 }
 /*  */
 
@@ -1427,6 +1439,20 @@ a.cart-contents {
   margin-top: 0;
 }
 
+.wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wc-block-cart__payment-options.wp-block-woocommerce-cart-express-payment-block {
+  width: 90%;
+}
+
+.wc-block-cart__submit.wp-block-woocommerce-proceed-to-checkout-block {
+  width: 90%;
+  border-radius: 0 !important;
+}
 /*  */
 
 /* Slut i lager */
@@ -1533,6 +1559,7 @@ a.cart-contents {
   width: 100% !important;
   /* border: 1px solid black; */
   box-shadow: 0 0.05rem 0.05rem black;
+  margin-top: 20px !important;
 }
 
 .wc-block-cart-items__row .wc-block-cart-item__total {
@@ -1626,12 +1653,12 @@ table.wc-block-cart-items
   border-radius: 50px !important;
 }
 
-.components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
+/* .components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
   border-bottom-left-radius: 25px !important;
   border-bottom-right-radius: 25px !important;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
-}
+} */
 
 /*  */
 
@@ -1712,7 +1739,7 @@ table.wc-block-cart-items
 
 .wc-block-components-order-summary-item {
   border: 1px solid black !important;
-  width: 80% !important;
+  width: auto !important;
   margin: auto !important;
 }
 
@@ -1724,9 +1751,9 @@ table.wc-block-cart-items
   font-size: 20px !important;
 }
 
-.wc-block-components-totals-wrapper {
+/* .wc-block-components-totals-wrapper {
   font-size: 20px !important;
-}
+} */
 
 .wc-block-components-express-payment-continue-rule {
   align-items: center;
@@ -1812,6 +1839,9 @@ strong {
   font-weight: normal !important;
 }
 
+.wc-block-components-checkbox.wc-block-checkout__use-address-for-billing label {
+  font-size: 20px !important;
+}
 /*  */
 
 /* Smart Tablet */
