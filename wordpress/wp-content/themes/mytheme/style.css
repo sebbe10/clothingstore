@@ -666,7 +666,7 @@ body {
 
 .comments {
   position: absolute;
-  top: -500px;
+  top: -10000px;
 }
 
 .comments h2 {
@@ -1473,7 +1473,6 @@ a.cart-contents {
 /*  */
 
 /* Produkt tillagd i kassan samt betalning och frakt*/
-
 .wc-block-cart-items.wp-block-woocommerce-cart-line-items-block {
   display: flex !important;
   width: 90% !important;
@@ -1489,6 +1488,7 @@ a.cart-contents {
   margin: auto;
   margin-top: 20px;
 }
+
 .wc-block-components-totals-coupon {
   text-align: center !important;
 }
@@ -1496,7 +1496,7 @@ a.cart-contents {
 .wc-block-components-totals-coupon a {
   color: black;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .wc-block-components-totals-coupon a:hover {
@@ -1621,10 +1621,21 @@ table.wc-block-cart-items
   margin: 0 !important;
 }
 
+.wc-block-cart__submit.wp-block-woocommerce-proceed-to-checkout-block {
+  margin: 0 !important;
+  border-radius: 50px !important;
+}
+
+.components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
+  border-bottom-left-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
 /*  */
 
 /* Style user */
-
 .um-cover.um-trigger-menu-on-click {
   display: none !important;
 }
@@ -1663,15 +1674,7 @@ table.wc-block-cart-items
   display: none;
 }
 
-/* Paypal i varukorgen */
-/* Paypal design */
-
-/*  */
-/*  */
-/*  */
-
 /* avatar avatar-190 um-avatar um-avatar-default */
-
 #menu-meny2 li:nth-of-type(1),
 #menu-meny2 li:nth-of-type(2) {
   display: none;
@@ -1679,6 +1682,134 @@ table.wc-block-cart-items
 
 .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block {
   margin-top: 30px !important;
+}
+
+/*  */
+
+/* Order i kassan */
+
+.wp-block-woocommerce-checkout {
+  background-color: white !important;
+}
+
+.wc-block-components-panel__button-icon {
+  cursor: pointer;
+  height: 50px;
+}
+
+.wc-block-components-panel__button-icon:hover {
+  color: darkblue;
+  height: 50px;
+}
+
+.wc-block-components-order-summary__button-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 22px;
+}
+
+.wc-block-components-order-summary-item {
+  border: 1px solid black !important;
+  width: 80% !important;
+  margin: auto !important;
+}
+
+.wp-block-woocommerce-checkout-order-summary-subtotal-block.wc-block-components-totals-wrapper {
+  font-size: 20px !important;
+}
+
+.wp-block-woocommerce-checkout-order-summary-shipping-block.wc-block-components-totals-wrapper {
+  font-size: 20px !important;
+}
+
+.wc-block-components-totals-wrapper {
+  font-size: 20px !important;
+}
+
+.wc-block-components-express-payment-continue-rule {
+  align-items: center;
+  display: flex;
+  margin: 0 !important;
+  padding: 0 24px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.wc-block-components-radio-control
+  .wc-block-components-radio-control__input:checked:before {
+  background-color: green !important;
+}
+/*  */
+
+/* Order summary när man har beställt en produkt så får man upp beställningsdetaljer */
+.woocommerce-order {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  margin-top: 50px !important;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details
+  thead {
+  text-align: center !important;
+}
+
+.woocommerce-table__line-item.order_item {
+  text-align: center !important;
+}
+
+.wc-item-meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details
+  tfoot
+  tr {
+  text-align: center !important;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details {
+  background-color: white !important;
+}
+
+.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.woocommerce ul.order_details li {
+  float: none !important;
+  margin-right: 0 !important;
+  text-transform: none !important;
+
+  line-height: none !important;
+  border-right: none !important;
+  padding-right: 2em !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  list-style-type: none !important;
+  font-size: 15px !important;
+}
+
+strong {
+  font-size: 18px !important;
+  font-family: Arial !important;
+  font-weight: normal !important;
+}
+
+.woocommerce-Price-amount.amount bdi {
+  font-size: 18px !important;
+  font-family: Arial !important;
+  font-weight: normal !important;
 }
 
 /*  */
@@ -2021,7 +2152,6 @@ table.wc-block-cart-items
 
   .wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block {
     background-color: white;
-    border-radius: 0 !important;
     margin: auto;
     margin-top: 20px;
   }
@@ -2050,6 +2180,14 @@ table.wc-block-cart-items
     margin: 0 !important;
   }
 
+  .components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
+    border-bottom-left-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+
+  /* contained */
   /*  */
 
   .single-product {
@@ -2313,6 +2451,19 @@ table.wc-block-cart-items
       justify-content: center;
       align-items: center;
     }
+
+    .wc-block-cart__submit {
+      margin: 0 0 56px !important;
+      position: relative !important;
+    }
+
+    .components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button {
+      border-bottom-left-radius: 25px !important;
+      border-bottom-right-radius: 25px !important;
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+    }
+
     /*  */
 
     .single-product {

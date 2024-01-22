@@ -21,7 +21,7 @@ function woocommerce_add_to_cart_button_text_single()
 add_filter('woocommerce_product_add_to_cart_text', 'woocommerce_add_to_cart_button_text_archives');
 function woocommerce_add_to_cart_button_text_archives()
 {
-    return __('Klicka för att komma till produkten', 'woocommerce');
+    return __('Klicka för att komma till produkten / lägga till', 'woocommerce');
 }
 
 ?>
