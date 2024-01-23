@@ -225,42 +225,6 @@ body {
 }
 /*  */
 
-/* Sortering låg till höt pris */
-.woocommerce-ordering {
-  width: 100%;
-  text-align: center;
-}
-
-.woocommerce-ordering .orderby {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  border-radius: 5px;
-  background: whitesmoke;
-  color: black;
-  font-size: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.woocommerce .woocommerce-result-count {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-  font-weight: 100;
-  font-family: Arial;
-  float: none !important;
-}
-/*  */
-
 /* Footer*/
 .theFooter {
   display: flex;
@@ -1011,16 +975,13 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 .stock.in-stock {
   font-size: 22px !important;
 }
+/*  */
 
 /*  */
 
-/* Background color paypal */
-.ppc-button-ppcp-gateway {
-  background-color: whitesmoke;
-}
-/*  */
+/* Sortering låg till höt pris */
 
-.woocommerce .woocommerce-ordering {
+.woocommerce-ordering {
   border: 1px solid;
   width: 79% !important;
   display: flex;
@@ -1028,6 +989,35 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   align-items: center;
   justify-content: center;
   margin: auto !important;
+  float: none !important;
+}
+
+.woocommerce-ordering .orderby {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-radius: 5px;
+  background: whitesmoke;
+  color: black;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.woocommerce .woocommerce-result-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 100;
+  font-family: Arial;
   float: none !important;
 }
 
@@ -1145,7 +1135,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 .wc-block-grid__product-title {
   display: flex;
   flex-wrap: wrap;
-  font-size: 22px !important;
+  font-size: 15px !important;
   color: black !important;
 }
 
@@ -1282,7 +1272,6 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   color: darkblue;
   text-decoration: 2px underline black;
 }
-
 /*  */
 
 /* Policy */
@@ -1379,14 +1368,14 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
-
 /*  */
 
+/* Flytta ner lite när det är tomt med proukter */
 .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
   margin-top: 35px !important;
 }
 
-/* Cart */
+/* Cart icon med siffror */
 a.cart-contents {
   text-decoration: none !important;
   color: black !important;
@@ -1403,9 +1392,11 @@ a.cart-contents {
   font-size: 30px !important;
 }
 
+/* Flytta ner lite när det finns proukter i varukorgen*/
 .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-small {
-  margin-top: 0;
+  margin-top: 0px !important;
 }
+/*  */
 
 .wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block {
   display: flex;
@@ -1413,14 +1404,14 @@ a.cart-contents {
   flex-direction: column;
 }
 
-.wc-block-cart__payment-options.wp-block-woocommerce-cart-express-payment-block {
+/* .wc-block-cart__payment-options.wp-block-woocommerce-cart-express-payment-block {
   width: 90%;
 }
 
 .wc-block-cart__submit.wp-block-woocommerce-proceed-to-checkout-block {
   width: 90%;
-  border-radius: 0 !important;
-}
+  border-radius: 50px !important;
+} */
 /*  */
 
 /* Slut i lager */
