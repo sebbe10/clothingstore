@@ -2124,6 +2124,13 @@ strong {
   }
   /*  */
 
+  /* Betalnings method*/
+  .wp-block-woocommerce-cart-order-summary-heading-block.wc-block-cart__totals-title {
+    text-align: center !important;
+    font-size: 20px !important;
+  }
+  /*  */
+
   /* Computer */
   @media screen and (min-width: 1200px) {
     .theComputerNav ul {
@@ -2169,24 +2176,7 @@ strong {
       width: 300px !important;
       height: 400px !important;
       border-radius: 5px;
-      padding-left: 10px !important;
-      padding-right: 10px !important;
-      padding-top: 10px !important;
-      padding-bottom: 10px !important;
-    }
-
-    /* Footern där information finns om hur man kontaktar */
-    .theFooter {
-      display: flex;
-      flex-direction: row;
-      height: 100px;
-      width: 100%;
-      background-color: lightgray;
-      color: black;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      margin-top: 100px;
+      padding: 10px !important;
     }
 
     /* Footern där information finns om hur man kontaktar */
@@ -2205,27 +2195,13 @@ strong {
     /*  */
 
     /* Account meny for users */
-    .theAccountMeny {
-      position: fixed;
-      left: 1500px;
-      z-index: 100;
-      width: 25%;
-    }
 
-    .theAccountMeny ul {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      justify-content: center;
-      align-items: center;
+    .thePhoneAccountMeny {
+      width: 20% !important;
     }
+    /*  */
 
-    .theAccountMeny.openMenu {
-      position: absolute;
-      left: 0;
-      z-index: 100;
-    }
-
+    /* Sortering pris högt till lågt */
     .woocommerce-ordering .orderby {
       display: flex;
       flex-direction: row;
@@ -2245,7 +2221,7 @@ strong {
     }
     /*  */
 
-    /* Empty cart */
+    /* Empty cart bilder som visar vad som finns när ingas produkter är tillagda i varukorgen*/
     img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
       width: 250px !important;
       height: 250px !important;
@@ -2272,12 +2248,19 @@ strong {
       border-top-right-radius: 0 !important;
     }
 
+    .wp-block-woocommerce-cart-order-summary-heading-block.wc-block-cart__totals-title {
+      text-align: center !important;
+      font-size: 20px !important;
+    }
     /*  */
 
+    /* Single produkt flytta ner info lite */
     .single-product {
       margin-top: 50px;
     }
+    /*  */
 
+    /* Flytta ner smile där det står din varukorg är för närvarande tom */
     .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
       margin-top: 35px !important;
     }
@@ -2298,9 +2281,11 @@ strong {
       top: 0px !important;
       font-size: 30px !important;
     }
+    /*  */
 
+    /* Flytta ner info i varukorgen */
     .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large {
-      margin-top: 50px;
+      margin-top: 50px !important;
     }
     /*  */
 
