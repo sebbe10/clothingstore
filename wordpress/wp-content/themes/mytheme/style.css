@@ -8,7 +8,6 @@ body {
 }
 
 /* Startsida butik */
-/*  */
 .theHeader {
   height: 100px;
   background-color: lightgray;
@@ -33,7 +32,6 @@ body {
 /*  */
 
 /* Startsidans huvud bild */
-
 .wp-image-111 {
   display: flex;
   justify-content: center;
@@ -49,7 +47,6 @@ body {
   width: 100%;
   height: auto;
 }
-
 /*  */
 
 /* Hamburgeermeny knappen */
@@ -61,15 +58,13 @@ body {
   position: absolute;
   right: 0;
 }
-
 /*  */
-/* 
-  Hamburger menyns sträng knapp
-   */
 
+/* Hamburger menyns sträng knapp*/
 .isClose {
   height: 100px;
 }
+
 .fa-solid.fa-x {
   color: darkred;
   top: 75px;
@@ -78,11 +73,9 @@ body {
   font-size: 40px;
   cursor: pointer;
 }
-
 /*  */
 
 /* Själva innehållets design till hamburger menyn */
-
 .theComputerNav {
   display: none;
 }
@@ -110,6 +103,7 @@ body {
   flex-wrap: wrap;
   margin-top: 100px !important;
 }
+
 .theHamburgerMenu a {
   color: black;
   font-size: 25px;
@@ -163,7 +157,6 @@ body {
 /*  */
 
 /* Styling till produkterna */
-
 .products.columns-4 {
   display: flex !important;
   flex-direction: row !important;
@@ -232,7 +225,7 @@ body {
 }
 /*  */
 
-/* Sortering*/
+/* Sortering låg till höt pris */
 .woocommerce-ordering {
   width: 100%;
   text-align: center;
@@ -266,10 +259,9 @@ body {
   font-family: Arial;
   float: none !important;
 }
-
 /*  */
 
-/* Footern där information finns om hur man kontaktar */
+/* Footer*/
 .theFooter {
   display: flex;
   flex-direction: row;
@@ -285,8 +277,7 @@ body {
 }
 
 /* Category sidan */
-
-.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 {
+/* .wc-block-product-categories-list.wc-block-product-categories-list--depth-0 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -351,11 +342,11 @@ body {
 
 .theaforcategory {
   font-size: 20px;
-}
+} */
 
 /*  */
 
-/* Search */
+/* Search för produkter*/
 .theStyleSearch {
   display: flex;
   justify-content: center;
@@ -389,6 +380,7 @@ body {
 .theH2Search {
   font-size: 15px;
 }
+
 .theEachButton {
   display: flex;
   flex-direction: column;
@@ -401,7 +393,7 @@ body {
   border: none;
 }
 
-.wp-block-button__link.add_to_cart_button {
+/* .wp-block-button__link.add_to_cart_button {
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -411,7 +403,7 @@ body {
   background: black !important;
   padding: 5px !important;
   border: none !important;
-}
+} */
 
 .theEachButton:hover {
   background-color: black;
@@ -430,7 +422,6 @@ body {
 /*  */
 
 /* Account meny for users */
-
 .fa-solid.fa-user {
   left: 20px;
   font-size: 40px;
@@ -492,7 +483,6 @@ body {
 .thePhoneAccountMeny.openPhoneMenu a:hover {
   color: darkblue;
 }
-
 /*  */
 
 /* Single product */
@@ -502,6 +492,7 @@ body {
   margin: auto;
   margin-top: 10px;
 }
+
 .zoomImg {
   display: none !important;
 }
@@ -702,6 +693,7 @@ p.price {
   text-align: center;
   font-size: 25px;
 }
+
 .variations {
   display: flex;
   justify-content: center;
@@ -737,6 +729,8 @@ p.price {
   margin-top: 10px;
   border-radius: 5px;
 }
+
+/*  */
 
 .cart {
   display: flex;
@@ -898,7 +892,7 @@ p.price {
   padding: 4px !important;
 }
 
-/* Beskrivning */
+/* Beskrivning single produkt*/
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab {
   display: flex;
   flex-direction: column;
@@ -916,7 +910,7 @@ p.price {
   text-align: center !important;
 }
 
-/* Ytterligare information */
+/* Ytterligare information single produkt*/
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--additional_information.panel.entry-content.wc-tab {
   display: flex;
   flex-direction: column;
@@ -993,7 +987,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 
 /*  */
 
-/* Reset button */
+/* Reset button single produkt*/
 .reset_variations {
   color: black !important;
   font-size: 18px !important;
