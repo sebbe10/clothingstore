@@ -10,13 +10,9 @@
 <body>
     <?php get_header() ?>
 
-
-
     <div class="theStyleSearch">
-        <?php
-        // get_search_form();
-        // get_product_search_form()
-        ?>
+
+        <h1 class="thePopUpSearch">Här får du upp alla produkter som du söker efter</h1>
     </div>
     <div class="allSearch">
         <?php
@@ -24,6 +20,7 @@
             while (have_posts()) : the_post();
         ?>
                 <div class="eachSearchProduct">
+
                     <a href="<?php
                                 the_permalink()
                                 ?>">
@@ -31,16 +28,20 @@
                             <?php
                             the_post_thumbnail();
                             ?>
+
                         </div>
                     </a>
+
                     <h2 class="theH2Search">
                         <?php
                         the_title();
                         ?>
+
                         <button class="theEachButton">
                             <a class="theEachA" href="<?php the_permalink() ?>">
                                 Klicka för att komma till produkten</a>
                         </button>
+
                     </h2>
                 </div>
         <?php
@@ -48,7 +49,9 @@
         endif;
         ?>
     </div>
+
     <?php get_footer() ?>
+
 </body>
 
 </html>

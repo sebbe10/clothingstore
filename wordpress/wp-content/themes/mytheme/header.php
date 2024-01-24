@@ -22,8 +22,8 @@
             </a>
         </h1>
 
-        <?php global $woocommerce; ?>
 
+        <?php global $woocommerce; ?>
         <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
             <?php echo sprintf(_n('%d', '%d', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count); ?>
             <i class="fa-solid fa-cart-shopping">
@@ -31,7 +31,6 @@
         </a>
 
         <i onclick="theOpenMenu()" class="fa-solid fa-bars"></i>
-
         <div class="theHamburgerMenu">
             <i onclick="theClose()" class="fa-solid fa-x"></i>
             <?php
@@ -40,8 +39,6 @@
 
             <li class="theCategoryButton" onclick="openCategory()">Kategory</li>
 
-
-            <!--  -->
             <?php
             $taxonomy     = 'product_cat';
             $orderby      = 'name';
@@ -80,7 +77,6 @@
             <?php
             echo '</ul>';
             ?>
-            <!--  -->
 
         </div>
 
@@ -94,11 +90,6 @@
             <?php
             get_product_search_form();
             ?>
-
-            <!-- Account menu -->
-
-            <!-- <i onclick="openAccountMenu()" class="fa-regular fa-user"></i> -->
-            <!-- <i onclick="openAccountForPhoneMenu()" class="fa-solid fa-user"></i> -->
 
             <div class="theAccountMeny">
                 <?php
@@ -115,14 +106,15 @@
                 }
                 ?>
             </div>
-            <!--  -->
+
             <div class="theMenyFoSmartAndComputer">
                 <?php
                 wp_nav_menu();
                 ?>
                 <div class="outputCatAndTheButton">
                     <li class="theCategoryButton" onclick="openCategoryComputer()">Kategory</li>
-                    <!--  -->
+
+
                     <?php
                     $taxonomy     = 'product_cat';
                     $orderby      = 'name';
@@ -161,23 +153,12 @@
                     <?php
                     echo '</ul>';
                     ?>
+
                 </div>
-                <!--  -->
             </div>
-
-            <!-- <p class="theBtnForCategory2" onclick="openCategory2()">Kategory</p> -->
-            <!-- <div class="theCategoryDiv2"> -->
-            <!-- <p class="theCategoryUL"> -->
-            <!-- <li class="theLI"><a class="theA" href="">T-shirt</a></li>
-                <li class="theLI"><a class="theA" href="">Huvtröja</a></li>
-                <li class="theLI"><a class="theA" href="">Mjukisbyxa</a></li> -->
-            <!-- </p> -->
-            <!-- </div> -->
-
         </div>
 
 
-        <!-- Account menu for phone -->
 
         <i onclick="openAccountForPhoneMenu()" class="fa-solid fa-user"></i>
 
@@ -195,20 +176,14 @@
                     ));
                     ?>
                 </div>
+
             <?php
             }
             ?>
         </div>
-        <!--  -->
-
-
-
-
     </header>
 
 
-
-    <!-- <p class="thep">Bild1</p> -->
 
     <script>
         function theOpenMenu() {
@@ -246,36 +221,4 @@
             document.querySelector('.wc-product-categories').classList.toggle('openCat')
             document.querySelector('.wc-product-categories-list').classList.remove('openCat')
         }
-
-        // function openMenuAndRemove() {
-        //     document.querySelector('.fa-solid fa-bars').classList.toggle('oopen')
-        // }
-
-        //         let ha = document.querySelector(".thep");
-
-        // setInterval(() => {
-        //   if (ha.innerHTML === "Bild1") {
-        //     ha.innerHTML = "Bild2";
-        //     //    <img src="theimg/Skärmbild 2023-12-28 093229.png" alt="">
-        //   } else {
-        //     ha.innerHTML = "Bild1";
-        //   }
-        // }, 5000);
-
-
-
-        // let ha = document.querySelector('.thep')
-
-        // setInterval(() => {
-        //     if (ha.innerHTML === 'Bild1') {
-
-        //         // ha.innerHTML = 'Bild2';
-        //         //    <img src="theimg/Skärmbild 2023-12-28 093229.png" alt="">
-        //     } else {
-        //         ha.innerHTML = 'Bild1'
-        //     }
-        // }, 5000)
-        // function removeABody() {
-        //     document.querySelector('.theAccountMeny').classList.remove('openMenu')
-        // }
     </script>

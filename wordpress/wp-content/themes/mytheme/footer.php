@@ -1,5 +1,4 @@
 <footer class="theFooter">
-    <!-- <p>Kontakta: 07222255556</p> -->
     <p>Mail: clothingStore@gmail.com</p>
 
     <?php
@@ -10,6 +9,7 @@
         ));
     }
     ?>
+
     <div class="paymethod">
         <h3>Betalnings metoder</h3>
         <p>Betala vid leverans eller med PayPal</p>
