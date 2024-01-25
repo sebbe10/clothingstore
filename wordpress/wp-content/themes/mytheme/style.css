@@ -1289,6 +1289,8 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
   display: flex !important;
   width: 90% !important;
   margin: auto !important;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .wc-block-cart__submit-container.wc-block-cart__submit-container--sticky {
@@ -1425,8 +1427,12 @@ a.cart-contents {
 
 /* Produkt tillagd i varukorg / kassan samt betalning och frakt*/
 
+/* .wc-block-components-sidebar-layout .wc-block-components-main {
+  width: auto !important;
+} */
+
 .wc-block-cart-items.wp-block-woocommerce-cart-line-items-block tbody {
-  width: 100% !important;
+  width: auto !important;
 }
 
 .is-small
@@ -1603,13 +1609,7 @@ table.wc-block-cart-items
 }
 
 .wc-block-cart-items__header {
-  display: flex !important;
-  position: absolute !important;
-  flex-direction: row-reverse;
-  gap: 25px;
-  font-size: 20px !important;
-  top: -3px !important;
-  width: 335px;
+  display: none !important;
 }
 
 .wc-block-components-shipping-rates-control.wc-block-components-totals-shipping__options {
@@ -1669,6 +1669,60 @@ table.wc-block-cart-items
 .wc-block-components-radio-control
   .wc-block-components-radio-control__input:checked:before {
   background-color: green !important;
+}
+
+.wc-block-components-order-summary .wc-block-components-order-summary__content {
+  display: table;
+  width: auto !important;
+  margin: auto !important;
+}
+
+.wc-block-components-order-summary-item__image {
+  width: 200px !important;
+  padding: 0 !important;
+}
+
+.wc-block-components-order-summary-item__image img {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.wc-block-components-order-summary
+  .wc-block-components-order-summary-item__image
+  > img {
+  max-width: none !important;
+  height: none !important;
+}
+
+.wc-block-components-order-summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wc-block-components-order-summary-item
+  .wc-block-components-order-summary-item__description {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center;
+}
+
+.wc-block-components-order-summary-item
+  .wc-block-components-order-summary-item__total-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  font-size: 25px;
+}
+
+.is-large .wc-block-components-sidebar .wc-block-components-panel {
+  padding-left: 0 !important;
+  padding-right: 16px !important;
+}
+
+.wp-block-woocommerce-checkout-order-summary-block {
+  border: 1px solid black !important;
 }
 /*  */
 
