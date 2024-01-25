@@ -2,12 +2,14 @@
     <p>Mail: clothingStore@gmail.com</p>
 
     <?php
+    // Skriver ut kontakta oss i footern
     if (get_the_title() !== 'Kontakta oss') {
         wp_nav_menu(array(
             'theme_location' => 'page-menu'
 
         ));
     }
+    // 
     ?>
 
     <div class="paymethod">

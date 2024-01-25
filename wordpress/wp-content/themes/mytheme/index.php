@@ -11,7 +11,7 @@
     <?php
     get_header() ?>
 
-
+    <!-- Här ser du alla produkter som kommer släppas -->
     <marquee behavior="" direction="" left>
         <h3>Produkt släpp</h3>
     </marquee>

@@ -16,6 +16,10 @@
     </div>
     <div class="allSearch">
         <?php
+        // I denna loop så har jag lagt till så att om man klickar på bilden 
+        // så kommer man till produkten. Jag har också lagt till title och
+        // en knapp som gör också så att du kommer till produkten
+
         if (have_posts()) :
             while (have_posts()) : the_post();
         ?>
@@ -47,6 +51,7 @@
         <?php
             endwhile;
         endif;
+        // 
         ?>
     </div>
 

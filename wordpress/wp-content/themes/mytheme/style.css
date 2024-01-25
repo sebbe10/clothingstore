@@ -1100,6 +1100,7 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 .wc-block-components-product-details {
   display: flex;
   gap: 5px;
+  margin: 0 !important;
 }
 
 .wc-block-components-order-summary-item__total-price {
@@ -1423,27 +1424,78 @@ a.cart-contents {
 /*  */
 
 /* Produkt tillagd i varukorg / kassan samt betalning och frakt*/
+
+.wc-block-cart-items.wp-block-woocommerce-cart-line-items-block tbody {
+  width: 100% !important;
+}
+
+.is-small
+  table.wc-block-cart-items
+  .wc-block-cart-items__row
+  .wc-block-cart-item__image {
+  padding-right: 0 !important;
+  padding: 0 !important;
+}
+.wc-block-cart-item__image {
+  padding: 0 !important;
+}
+
+.wc-block-components-product-metadata__description p {
+  margin: 0 !important;
+}
+
 .wc-block-cart-items__row {
   display: flex !important;
-  flex-direction: row;
+  flex-direction: column;
   width: 100% !important;
   box-shadow: 0 0.05rem 0.05rem black;
   margin-top: 20px !important;
+  background-color: white !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+  justify-content: center;
+  align-items: center;
 }
 
-.wc-block-cart-items__row .wc-block-cart-item__total {
-  position: absolute;
+.wc-block-components-quantity-selector {
+  margin: 0 !important;
+}
+
+.wc-block-components-quantity-selector__button.wc-block-components-quantity-selector__button--minus {
+  color: red !important;
+  font-size: 30px !important;
+}
+
+.wc-block-components-quantity-selector__button.wc-block-components-quantity-selector__button--plus {
+  color: green !important;
+  font-size: 30px !important;
+}
+
+.is-large.wc-block-cart .wc-block-cart-items {
+  border-bottom: 0 !important;
+}
+
+.wc-block-cart-item__wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: auto !important;
+  text-align: center !important;
+  font-size: 25px !important;
 }
 
 table.wc-block-cart-items
   .wc-block-cart-items__row
   .wc-block-cart-item__image
   img {
-  width: 200px !important;
+  width: 150px !important;
+  border-radius: 5px !important;
 }
 
 .wc-block-cart-item__image {
-  display: flex !important;
+  /* display: flex !important; */
   flex-direction: column !important;
   justify-content: center !important;
   width: 200px !important;
@@ -1459,11 +1511,14 @@ table.wc-block-cart-items
   flex-direction: row !important;
   justify-content: center !important;
   align-items: start !important;
+  padding: 0 !important;
 }
 
 .wc-block-components-product-name {
+  display: flex;
+  flex-wrap: wrap;
   margin: auto !important;
-  font-size: 18px !important;
+  font-size: 22px !important;
   color: black;
   text-decoration: none;
 }
@@ -1476,6 +1531,7 @@ table.wc-block-cart-items
   margin: 0 !important;
   display: flex !important;
   flex-direction: column !important;
+  font-size: 22px !important;
 }
 
 .wc-block-cart-item__quantity {
@@ -1484,6 +1540,7 @@ table.wc-block-cart-items
   justify-content: center !important;
   height: auto !important;
   padding: 0 !important;
+  margin: auto !important;
 }
 
 .wc-block-cart-item__remove-link {
@@ -1509,6 +1566,7 @@ table.wc-block-cart-items
 
 .wc-block-cart table.wc-block-cart-items td {
   margin: 0 !important;
+  padding: 0 !important;
 }
 /*  */
 

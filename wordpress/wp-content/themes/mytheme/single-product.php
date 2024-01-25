@@ -13,7 +13,9 @@
     get_header()
     ?>
 
+
     <?php
+    // Denna loop gör så att du kan just se den produkten som du har klickat på separat.
     if (have_posts()) :
         while (have_posts()) : the_post();
     ?>
@@ -23,8 +25,12 @@
     <?php
         endwhile;
     endif;
+    // 
     ?>
 
+    <!-- Det finns två knappar lägg till kommentar eller visa kommentarer
+     för just denna produkt som du har gått in på.
+ -->
     <div class="theReviewsAndComments">
         <button class="theReviewButton" onclick="addReviews()">Add reviews</button>
         <button class="theShowCommentsButton" onclick="showReviews()">Show Reviews</button>
