@@ -1490,15 +1490,15 @@ table.wc-block-cart-items
   .wc-block-cart-items__row
   .wc-block-cart-item__image
   img {
-  width: 150px !important;
+  width: 250px !important;
+  height: 150px !important;
   border-radius: 5px !important;
 }
 
 .wc-block-cart-item__image {
-  /* display: flex !important; */
   flex-direction: column !important;
   justify-content: center !important;
-  width: 200px !important;
+  width: 250px !important;
   margin-top: 50px !important;
 }
 
@@ -1517,10 +1517,17 @@ table.wc-block-cart-items
 .wc-block-components-product-name {
   display: flex;
   flex-wrap: wrap;
-  margin: auto !important;
   font-size: 22px !important;
   color: black;
   text-decoration: none;
+  margin: 0 !important;
+  text-align: center !important;
+  background-color: whitesmoke !important;
+  border-radius: 5px;
+}
+
+.wc-block-components-product-name:hover {
+  color: darkblue;
 }
 
 .wc-block-cart-item__prices {
