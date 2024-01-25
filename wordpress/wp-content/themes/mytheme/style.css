@@ -1724,6 +1724,16 @@ table.wc-block-cart-items
 .wp-block-woocommerce-checkout-order-summary-block {
   border: 1px solid black !important;
 }
+
+.wc-block-checkout__actions_row {
+  /* background-color: whitesmoke; */
+}
+
+.wc-block-checkout__actions_row button {
+  background-color: darkgreen;
+  color: white;
+}
+
 /*  */
 
 /* Order summary när man har beställt en produkt så får man upp beställningsdetaljer */
