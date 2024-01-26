@@ -2019,7 +2019,7 @@ strong {
 
 .woocommerce div.product div.images .flex-control-thumbs li img {
   width: 150px !important;
-  height: 150px !important;
+  /* height: 150px !important; */
 }
 /*  */
 
