@@ -1629,6 +1629,30 @@ table.wc-block-cart-items
 
 /* Order i kassan */
 .wp-block-woocommerce-checkout {
+  background-color: whitesmoke !important;
+}
+
+.wc-block-components-title.wc-block-components-express-payment__title {
+  background-color: white !important;
+}
+
+.wc-block-checkout__contact-fields.wp-block-woocommerce-checkout-contact-information-block.wc-block-components-checkout-step.wc-block-components-checkout-step--with-step-number {
+  background-color: white !important;
+}
+
+.wc-block-checkout__shipping-fields.wp-block-woocommerce-checkout-shipping-address-block.wc-block-components-checkout-step.wc-block-components-checkout-step--with-step-number {
+  background-color: white !important;
+}
+
+.wc-block-checkout__shipping-option.wp-block-woocommerce-checkout-shipping-methods-block.wc-block-components-checkout-step.wc-block-components-checkout-step--with-step-number {
+  background-color: white !important;
+}
+
+.wc-block-checkout__payment-method.wp-block-woocommerce-checkout-payment-block.wc-block-components-checkout-step.wc-block-components-checkout-step--with-step-number {
+  background-color: white !important;
+}
+
+.wc-block-checkout__order-notes.wp-block-woocommerce-checkout-order-note-block.wc-block-components-checkout-step {
   background-color: white !important;
 }
 
@@ -1733,6 +1757,7 @@ table.wc-block-cart-items
 .wc-block-checkout__actions_row button {
   background-color: darkgreen;
   color: white;
+  border-radius: 5px;
 }
 
 .wc-block-components-express-payment--checkout
@@ -1754,6 +1779,7 @@ table.wc-block-cart-items
   border-radius: 0 !important;
   border-top: 0 !important;
   padding: 10px !important;
+  background-color: white !important;
 }
 
 .wc-block-components-express-payment-continue-rule.wc-block-components-express-payment-continue-rule--checkout {
@@ -1770,12 +1796,31 @@ table.wc-block-cart-items
 
 .wc-block-components-form .wc-block-components-checkout-step {
   background: none;
-  /* border: 1px solid black !important; */
   background-color: whitesmoke !important;
   margin: 0;
   padding: 10px 10px 10px 10px !important;
-  margin: 5px !important;
+  margin: 10px !important;
   position: relative;
+}
+
+.is-small .wc-block-checkout__add-note {
+  border-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+}
+
+.ppcp-place-order-description {
+  text-align: start !important;
+}
+/*  */
+
+/* Checkout error */
+.wc-block-checkout-error {
+  padding: 48px !important;
+  text-align: center !important;
+  width: 50% !important;
+  margin: auto !important;
 }
 /*  */
 
