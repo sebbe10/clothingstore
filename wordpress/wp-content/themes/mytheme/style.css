@@ -1632,28 +1632,38 @@ table.wc-block-cart-items
   background-color: whitesmoke !important;
 }
 
+.wc-block-components-main.wc-block-checkout__main.wp-block-woocommerce-checkout-fields-block {
+  margin-top: 20px !important;
+}
+
 .wc-block-components-title.wc-block-components-express-payment__title {
   background-color: white !important;
+  border-radius: 5px !important;
 }
 
 .wc-block-checkout__contact-fields.wp-block-woocommerce-checkout-contact-information-block.wc-block-components-checkout-step.wc-block-components-checkout-step--with-step-number {
   background-color: white !important;
+  border-radius: 5px !important;
 }
 
 .wc-block-checkout__shipping-fields.wp-block-woocommerce-checkout-shipping-address-block.wc-block-components-checkout-step.wc-block-components-checkout-step--with-step-number {
   background-color: white !important;
+  border-radius: 5px !important;
 }
 
 .wc-block-checkout__shipping-option.wp-block-woocommerce-checkout-shipping-methods-block.wc-block-components-checkout-step.wc-block-components-checkout-step--with-step-number {
   background-color: white !important;
+  border-radius: 5px !important;
 }
 
 .wc-block-checkout__payment-method.wp-block-woocommerce-checkout-payment-block.wc-block-components-checkout-step.wc-block-components-checkout-step--with-step-number {
   background-color: white !important;
+  border-radius: 5px !important;
 }
 
 .wc-block-checkout__order-notes.wp-block-woocommerce-checkout-order-note-block.wc-block-components-checkout-step {
   background-color: white !important;
+  border-radius: 5px !important;
 }
 
 .wc-block-components-panel__button-icon {
@@ -1743,7 +1753,7 @@ table.wc-block-cart-items
 
 .is-large .wc-block-components-sidebar .wc-block-components-panel {
   padding-left: 0 !important;
-  padding-right: 16px !important;
+  padding-right: 10px !important;
 }
 
 .wp-block-woocommerce-checkout-order-summary-block {
@@ -1812,6 +1822,21 @@ table.wc-block-cart-items
 
 .ppcp-place-order-description {
   text-align: start !important;
+}
+
+.wc-block-components-address-card__edit {
+  color: black !important;
+  font-size: 20px !important;
+}
+
+.wp-block-woocommerce-checkout-express-payment-block {
+  position: relative !important;
+  z-index: 0 !important;
+}
+
+.wc-block-components-checkout-step--with-step-number
+  .wc-block-components-checkout-step__title:before {
+  display: none !important;
 }
 /*  */
 
