@@ -1817,6 +1817,26 @@ strong {
 }
 /*  */
 
+/* related products */
+.related.products {
+  display: none;
+}
+/*  */
+
+/* flera bilder till produkter */
+.flex-viewport {
+  height: 350px !important;
+}
+
+.woocommerce div.product div.images img {
+  display: block;
+  width: 80% !important;
+  height: auto;
+  box-shadow: none;
+  margin: auto;
+}
+/*  */
+
 /* Smart Tablet */
 @media screen and (min-width: 768px) {
   /* Startsida butik */
