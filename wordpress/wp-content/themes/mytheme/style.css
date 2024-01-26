@@ -1461,6 +1461,7 @@ a.cart-contents {
   text-align: center !important;
   justify-content: center;
   align-items: center;
+  padding: 10px !important;
 }
 
 .wc-block-components-quantity-selector {
@@ -1734,6 +1735,48 @@ table.wc-block-cart-items
   color: white;
 }
 
+.wc-block-components-express-payment--checkout
+  .wc-block-components-express-payment__title-container:after {
+  border-color: 0 !important;
+  border-radius: 0 !important;
+  border-right: none !important;
+  border-top: none !important;
+  content: none !important;
+  display: none !important;
+  flex-grow: 0 !important;
+  height: 0 !important;
+  margin-left: 0 !important;
+  pointer-events: none !important;
+}
+
+.wc-block-components-express-payment__content {
+  border: 0 !important;
+  border-radius: 0 !important;
+  border-top: 0 !important;
+  padding: 10px !important;
+}
+
+.wc-block-components-express-payment-continue-rule.wc-block-components-express-payment-continue-rule--checkout {
+  display: none !important;
+  border-bottom: 0 !important;
+  content: none !important;
+  flex: 0 !important;
+}
+
+.wc-block-components-checkout-step--with-step-number
+  .wc-block-components-checkout-step__container:after {
+  display: none !important;
+}
+
+.wc-block-components-form .wc-block-components-checkout-step {
+  background: none;
+  /* border: 1px solid black !important; */
+  background-color: whitesmoke !important;
+  margin: 0;
+  padding: 10px 10px 10px 10px !important;
+  margin: 5px !important;
+  position: relative;
+}
 /*  */
 
 /* Order summary när man har beställt en produkt så får man upp beställningsdetaljer */
