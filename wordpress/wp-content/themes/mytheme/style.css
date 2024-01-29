@@ -1627,10 +1627,13 @@ table.wc-block-cart-items
 .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block {
   margin-top: 30px !important;
 }
+
+.um.um-password.um-um_password_id {
+  margin-top: 180px !important;
+}
 /*  */
 
 /* Order i kassan */
-
 .wc-block-components-form.wc-block-checkout__form {
   border: 1px solid black;
   width: 90%;
@@ -1795,10 +1798,6 @@ table.wc-block-cart-items
   margin: auto;
 }
 
-/* .wc-block-checkout__actions_row { */
-/* background-color: whitesmoke; */
-/* } */
-
 .wc-block-checkout__actions_row button {
   background-color: darkgreen;
   color: white;
@@ -1917,9 +1916,31 @@ table.wc-block-cart-items
   margin-top: 50px !important;
 }
 
+.woocommerce-order-details__title {
+  text-align: center !important;
+  font-weight: 400 !important;
+  font-size: 30px !important;
+}
+
 .woocommerce-table.woocommerce-table--order-details.shop_table.order_details
   thead {
   text-align: center !important;
+}
+
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details
+  th {
+  font-size: 22px !important;
+  font-weight: 100 !important;
+}
+
+.woocommerce table.shop_table td,
+.woocommerce table.shop_table a {
+  font-size: 20px !important;
+  color: black !important;
+}
+
+.woocommerce table.shop_table a:hover {
+  color: darkblue !important;
 }
 
 .woocommerce-table__line-item.order_item {
@@ -1934,8 +1955,12 @@ table.wc-block-cart-items
 
 .woocommerce-table.woocommerce-table--order-details.shop_table.order_details
   tfoot
-  tr {
+  tr,
+.woocommerce-table.woocommerce-table--order-details.shop_table.order_details
+  tfoot
+  td {
   text-align: center !important;
+  font-weight: 100 !important;
 }
 
 .woocommerce-table.woocommerce-table--order-details.shop_table.order_details {
@@ -1949,6 +1974,9 @@ table.wc-block-cart-items
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: white;
+  font-family: Arial;
+  height: 100px;
 }
 
 .woocommerce ul.order_details li {
@@ -2306,6 +2334,10 @@ strong {
     height: 25px;
     margin-top: 10px;
     border-radius: 5px;
+  }
+
+  .um.um-password.um-um_password_id {
+    margin-top: 100px !important;
   }
   /*  */
 
