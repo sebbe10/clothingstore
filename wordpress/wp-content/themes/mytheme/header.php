@@ -22,7 +22,6 @@
             </a>
         </h1>
 
-
         <?php global $woocommerce; ?>
         <!-- Detta gör så att du ser en varukorg icon med en siffra som ökas ellet minskas
         när man lägget till en produkt eller tar bort en produkt -->
@@ -78,7 +77,9 @@
 
                     $category_id = $cat->term_id;
 
-                    echo '<li><a href="' . get_term_link($cat->slug, 'product_cat') . '">' . $cat->name . '</a></li>';
+                    echo '<li><a href="' . get_term_link($cat->slug, 'product_cat') . '">' . $cat->name . '</a>
+                    <hr>
+                    </li>';
                 }
             }
             ?>
@@ -164,7 +165,9 @@
 
                             $category_id = $cat->term_id;
 
-                            echo '<li><a href="' . get_term_link($cat->slug, 'product_cat') . '">' . $cat->name . '</a></li>';
+                            echo '<li><a href="' . get_term_link($cat->slug, 'product_cat') . '">' . $cat->name . '</a>
+                            <hr>
+                            </li>';
                         }
                     }
                     ?>

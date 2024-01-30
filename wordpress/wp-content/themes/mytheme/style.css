@@ -1180,10 +1180,18 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 
 .wpcf7-form.sent,
 .wpcf7-form.sent p {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; */
+
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  background: white;
+  border-radius: 50px;
+  width: 90%;
+  margin: auto;
 }
 
 .wp-block-heading {
@@ -1404,7 +1412,7 @@ a.cart-contents {
 
 .wc-product-categories-list.openCat {
   position: absolute;
-  top: 200px !important;
+  top: 240px !important;
 }
 
 .theCategoryButton {
@@ -1591,16 +1599,29 @@ table.wc-block-cart-items
   display: none !important;
 }
 
-.um.um-profile.um-viewing.um-155 {
-  margin-top: 100px !important;
+.um.um-profile {
+  height: 100vh !important;
 }
 
+/* .um.um-profile.um-viewing.um-155 { */
+/* margin-top: 100px !important; */
+/* } */
+
 .um-profile-meta {
-  display: flex;
+  /* display: flex;
   align-items: start;
   justify-content: start;
   flex-direction: row;
-  padding: 0px 20px !important;
+  padding: 0 !important; */
+
+  display: contents;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.um-profile.um .um-profile-headericon a {
+  color: black !important;
 }
 
 .gravatar {
@@ -1631,6 +1652,15 @@ table.wc-block-cart-items
 .um.um-password.um-um_password_id {
   margin-top: 180px !important;
 }
+
+.um-profile-photo {
+  display: none !important;
+}
+
+.um.um-profile.um-editing.um-155.um-role-subscriber.uimob500 {
+  height: 409px !important;
+}
+
 /*  */
 
 /* Order i kassan */
@@ -1891,8 +1921,7 @@ table.wc-block-cart-items
 
 .wp-block-woocommerce-checkout.alignwide.wc-block-checkout {
   font-family: Arial !important;
-  font-weight: 100 !important
-  ;
+  font-weight: 100 !important;
 }
 
 .wc-block-components-address-card address {
@@ -1916,6 +1945,11 @@ table.wc-block-cart-items
   margin-top: 50px !important;
 }
 
+.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details
+  li {
+  font-size: 22px !important;
+}
+
 .woocommerce-order-details__title {
   text-align: center !important;
   font-weight: 400 !important;
@@ -1931,6 +1965,16 @@ table.wc-block-cart-items
   th {
   font-size: 22px !important;
   font-weight: 100 !important;
+}
+
+.woocommerce table.shop_table td {
+  background-color: whitesmoke !important;
+}
+
+.woocommerce table.shop_table tfoot th,
+.woocommerce table.shop_table tfoot td {
+  border-top: none !important;
+  background-color: whitesmoke;
 }
 
 .woocommerce table.shop_table td,
@@ -1976,7 +2020,7 @@ table.wc-block-cart-items
   text-align: center;
   background: white;
   font-family: Arial;
-  height: 100px;
+  height: auto;
 }
 
 .woocommerce ul.order_details li {
@@ -2006,6 +2050,23 @@ strong {
 
 .wc-block-components-checkbox.wc-block-checkout__use-address-for-billing label {
   font-size: 20px !important;
+}
+
+.woocommerce-customer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.woocommerce-customer-details address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px !important;
+  font-size: 18px !important;
 }
 /*  */
 
@@ -2049,6 +2110,53 @@ strong {
   width: 150px !important;
   height: 150px !important;
 }
+/*  */
+
+/* On sale product index.php */
+
+.theRea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgrea {
+  height: 150px;
+}
+
+.allOnSaleProducts {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.eachOnSaleProdcut {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  background: whitesmoke;
+  border: 1px solid black;
+}
+
+.theOnSaleImg img {
+  width: 250px !important;
+  height: 250px !important;
+}
+
+.eachOnSaleProdcut .price {
+  display: flex;
+  flex-direction: column;
+}
+
 /*  */
 
 /* Smart Tablet */
@@ -2339,6 +2447,23 @@ strong {
   .um.um-password.um-um_password_id {
     margin-top: 100px !important;
   }
+
+  .um.um-login {
+    margin-top: 50px !important;
+  }
+
+  .um.um-register {
+    margin-top: 50px;
+  }
+
+  .um.um-account {
+    margin-top: 50px !important;
+  }
+
+  .um-form {
+    margin-top: 50px !important;
+  }
+
   /*  */
 
   /* Empty cart bilder som visar vad som finns*/

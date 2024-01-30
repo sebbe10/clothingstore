@@ -13,10 +13,63 @@
 
     <!-- Här ser du alla produkter som kommer släppas -->
     <marquee behavior="" direction="" left>
-        <h3>Produkt släpp</h3>
+        <h1>Rea</h1>
     </marquee>
+    <div>
+        <div class="theRea">
+            <img class="imgrea" src="http://localhost/clothingstore/wordpress/wp-content/themes/mytheme/theImg/therea.jpg" alt="">
+            <img class="imgrea" src="http://localhost/clothingstore/wordpress/wp-content/themes/mytheme/theImg/therea.jpg" alt="">
+            <img class="imgrea" src="http://localhost/clothingstore/wordpress/wp-content/themes/mytheme/theImg/therea.jpg" alt="">
+        </div>
+    </div>
+    <?php
 
-    <h1>Produkt släpp</h1>
+    $query_args = array(
+        'posts_per_page' => -1,
+        'no_found_rows' => 1,
+        'post_status' => 'publish',
+        'post_type' => 'product',
+        'meta_query' => WC()->query->get_meta_query(),
+        'post__in' => array_merge(array(0), wc_get_product_ids_on_sale())
+    );
+    $products = new WP_Query($query_args);
+
+    echo '<div class="allOnSaleProducts">';
+
+    if ($products->have_posts()) :
+        while ($products->have_posts()) : $products->the_post();
+
+            $post_thumbnail_id = get_post_thumbnail_id();
+            $product_thumbnail = wp_get_attachment_image_src($post_thumbnail_id, $size = 'shop-feature');
+            $product_thumbnail_alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', true);
+    ?>
+
+            <div class="eachOnSaleProdcut">
+                <div class="theOnSaleImg">
+                    <?php the_post_thumbnail() ?>
+                </div>
+                <h3>
+                    <?php woocommerce_template_single_price() ?>
+                </h3>
+
+                <h2>
+                    <?php
+                    echo get_the_title()
+                    ?>
+                </h2>
+
+                <button>
+                    <a href="<?php the_permalink() ?>">
+                        Klicka för att komma till rean
+                    </a>
+                </button>
+            </div>
+    <?php
+        endwhile;
+    endif;
+    ?>
+    <?php echo '</div>' ?>
+
 
     <?php get_footer() ?>
 
