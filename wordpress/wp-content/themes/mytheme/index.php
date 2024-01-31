@@ -13,13 +13,26 @@
 
     <!-- Här ser du alla produkter som kommer släppas -->
     <marquee behavior="" direction="" left>
-        <h1>Rea</h1>
+        <div class="theRea">
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+            <p>Rea</p>
+        </div>
     </marquee>
     <div>
         <div class="theRea">
-            <img class="imgrea" src="http://localhost/clothingstore/wordpress/wp-content/themes/mytheme/theImg/therea.jpg" alt="">
-            <img class="imgrea" src="http://localhost/clothingstore/wordpress/wp-content/themes/mytheme/theImg/therea.jpg" alt="">
-            <img class="imgrea" src="http://localhost/clothingstore/wordpress/wp-content/themes/mytheme/theImg/therea.jpg" alt="">
+            <img class="imgrea" src="http://localhost/clothingstore/wordpress/wp-content/themes/mytheme/theImg/isrea.png" alt="">
+
         </div>
     </div>
     <?php
@@ -48,17 +61,15 @@
                 <div class="theOnSaleImg">
                     <?php the_post_thumbnail() ?>
                 </div>
-                <h3>
+                <h3 class="onSalePrice">
                     <?php woocommerce_template_single_price() ?>
                 </h3>
-
-                <h2>
+                <h2 class="onSaleTitle">
                     <?php
                     echo get_the_title()
                     ?>
                 </h2>
-
-                <button>
+                <button class="onSaleButton">
                     <a href="<?php the_permalink() ?>">
                         Klicka för att komma till rean
                     </a>

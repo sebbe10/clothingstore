@@ -2122,6 +2122,7 @@ strong {
 }
 
 .imgrea {
+  width: 100% !important;
   height: 150px;
 }
 
@@ -2157,6 +2158,10 @@ strong {
   flex-direction: column;
 }
 
+.theRea {
+  font-size: 20px;
+  gap: 50px;
+}
 /*  */
 
 /* Smart Tablet */
@@ -2593,6 +2598,11 @@ strong {
     font-size: 20px !important;
   }
   /*  */
+
+  /* On sale product index.php */
+  marquee {
+    margin-top: 35px;
+  }
 
   /* Computer */
   @media screen and (min-width: 1200px) {
