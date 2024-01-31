@@ -11,7 +11,7 @@
     <?php
     get_header() ?>
 
-    <!-- Här ser du alla produkter som kommer släppas -->
+    <!-- Här ser du alla produkter som är på rea -->
     <marquee behavior="" direction="" left>
         <div class="theRea">
             <p>Rea</p>
@@ -37,6 +37,7 @@
     </div>
     <?php
 
+    // Denna loopen tar fram alla produkter som är på rea
     $query_args = array(
         'posts_per_page' => -1,
         'no_found_rows' => 1,
@@ -48,7 +49,6 @@
     $products = new WP_Query($query_args);
 
     echo '<div class="allOnSaleProducts">';
-
     if ($products->have_posts()) :
         while ($products->have_posts()) : $products->the_post();
 
@@ -59,16 +59,18 @@
 
             <div class="eachOnSaleProdcut">
                 <div class="theOnSaleImg">
-                    <?php the_post_thumbnail() ?>
+                    <a href="<?php the_permalink() ?>">
+                        <?php the_post_thumbnail() ?>
+                    </a>
                 </div>
-                <h3 class="onSalePrice">
-                    <?php woocommerce_template_single_price() ?>
-                </h3>
                 <h2 class="onSaleTitle">
                     <?php
                     echo get_the_title()
                     ?>
                 </h2>
+                <h3 class="onSalePrice">
+                    <?php woocommerce_template_single_price() ?>
+                </h3>
                 <button class="onSaleButton">
                     <a href="<?php the_permalink() ?>">
                         Klicka för att komma till rean
@@ -80,6 +82,7 @@
     endif;
     ?>
     <?php echo '</div>' ?>
+    <!--  -->
 
 
     <?php get_footer() ?>
