@@ -3,7 +3,7 @@
 
     <?php
     // Skriver ut kontakta oss i footern
-    if (get_the_title() !== 'Kontakta oss') {
+    if (get_the_title()) {
         wp_nav_menu(array(
             'theme_location' => 'page-menu'
 

@@ -73,7 +73,7 @@
                 </h3>
                 <button class="onSaleButton">
                     <a href="<?php the_permalink() ?>">
-                        Klicka för att komma till rean
+                        Klicka för att komma till produkten
                     </a>
                 </button>
             </div>

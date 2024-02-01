@@ -1180,11 +1180,6 @@ button.single_add_to_cart_button.button.alt.disabled.wc-variation-selection-need
 
 .wpcf7-form.sent,
 .wpcf7-form.sent p {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1434,11 +1429,6 @@ a.cart-contents {
 /*  */
 
 /* Produkt tillagd i varukorg / kassan samt betalning och frakt*/
-
-/* .wc-block-components-sidebar-layout .wc-block-components-main {
-  width: auto !important;
-} */
-
 .wc-block-cart-items.wp-block-woocommerce-cart-line-items-block tbody {
   width: auto !important;
 }
@@ -1535,7 +1525,6 @@ table.wc-block-cart-items
   font-size: 22px !important;
   color: black;
   text-decoration: none;
-  /* margin: 0 !important; */
   margin: auto !important;
   width: 80% !important;
   text-align: center !important;
@@ -1592,6 +1581,18 @@ table.wc-block-cart-items
   margin: 0 !important;
   padding: 0 !important;
 }
+
+.wc-block-components-product-metadata__description {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 5px !important;
+}
+
+.wc-block-cart-item__total-price-and-sale-badge-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
 /*  */
 
 /* Style user */
@@ -1636,7 +1637,7 @@ table.wc-block-cart-items
   display: none !important;
 }
 
-.wc-block-components-shipping-rates-control.wc-block-components-totals-shipping__options {
+.wc-block-components-totals-shipping__fieldset {
   display: none;
 }
 
